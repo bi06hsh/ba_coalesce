@@ -19,7 +19,8 @@ steps:
       metadata:
         appliedNodeTests: []
         columns:
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6193
               stepCounter: "92"
             dataType: VARCHAR(4)
@@ -31,7 +32,8 @@ steps:
                   - columnCounter: 6063
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6194
               stepCounter: "92"
             dataType: VARCHAR(1)
@@ -43,7 +45,8 @@ steps:
                   - columnCounter: 6064
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6195
               stepCounter: "92"
             dataType: VARCHAR(1)
@@ -55,7 +58,8 @@ steps:
                   - columnCounter: 6065
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6196
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -67,7 +71,8 @@ steps:
                   - columnCounter: 6066
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6197
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -79,7 +84,8 @@ steps:
                   - columnCounter: 6067
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6198
               stepCounter: "92"
             dataType: DATE
@@ -91,7 +97,8 @@ steps:
                   - columnCounter: 6068
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6199
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -103,7 +110,8 @@ steps:
                   - columnCounter: 6069
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6200
               stepCounter: "92"
             dataType: VARCHAR(12)
@@ -115,7 +123,8 @@ steps:
                   - columnCounter: 6070
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6201
               stepCounter: "92"
             dataType: VARCHAR(5)
@@ -127,7 +136,8 @@ steps:
                   - columnCounter: 6071
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6202
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -139,7 +149,8 @@ steps:
                   - columnCounter: 6072
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6203
               stepCounter: "92"
             dataType: VARCHAR(4)
@@ -151,7 +162,8 @@ steps:
                   - columnCounter: 6073
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6204
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -163,7 +175,8 @@ steps:
                   - columnCounter: 6074
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6205
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -175,7 +188,8 @@ steps:
                   - columnCounter: 6075
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6206
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -187,7 +201,8 @@ steps:
                   - columnCounter: 6076
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6207
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -199,7 +214,8 @@ steps:
                   - columnCounter: 6077
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6208
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -211,7 +227,8 @@ steps:
                   - columnCounter: 6078
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6209
               stepCounter: "92"
             dataType: VARCHAR(5)
@@ -223,7 +240,8 @@ steps:
                   - columnCounter: 6079
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6210
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -235,7 +253,8 @@ steps:
                   - columnCounter: 6080
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6319
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -247,7 +266,8 @@ steps:
                   - columnCounter: 6080
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6211
               stepCounter: "92"
             dataType: VARCHAR(6)
@@ -259,7 +279,8 @@ steps:
                   - columnCounter: 6081
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6212
               stepCounter: "92"
             dataType: VARCHAR(4)
@@ -271,7 +292,8 @@ steps:
                   - columnCounter: 6082
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6213
               stepCounter: "92"
             dataType: VARCHAR(5)
@@ -283,7 +305,8 @@ steps:
                   - columnCounter: 6083
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6214
               stepCounter: "92"
             dataType: VARCHAR(7)
@@ -295,7 +318,8 @@ steps:
                   - columnCounter: 6084
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6215
               stepCounter: "92"
             dataType: VARCHAR(5)
@@ -307,7 +331,8 @@ steps:
                   - columnCounter: 6085
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6216
               stepCounter: "92"
             dataType: VARCHAR(3)
@@ -319,7 +344,8 @@ steps:
                   - columnCounter: 6086
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6324
               stepCounter: "92"
             dataType: VARCHAR(3)
@@ -331,7 +357,8 @@ steps:
                   - columnCounter: 6086
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6217
               stepCounter: "92"
             dataType: VARCHAR(40)
@@ -343,7 +370,8 @@ steps:
                   - columnCounter: 6087
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6218
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -355,7 +383,8 @@ steps:
                   - columnCounter: 6088
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6219
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -367,7 +396,8 @@ steps:
                   - columnCounter: 6089
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6220
               stepCounter: "92"
             dataType: VARCHAR(50)
@@ -379,7 +409,8 @@ steps:
                   - columnCounter: 6090
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6221
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -391,7 +422,8 @@ steps:
                   - columnCounter: 6091
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6222
               stepCounter: "92"
             dataType: VARCHAR(5)
@@ -403,7 +435,8 @@ steps:
                   - columnCounter: 6092
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6223
               stepCounter: "92"
             dataType: VARCHAR(7)
@@ -415,7 +448,8 @@ steps:
                   - columnCounter: 6093
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6224
               stepCounter: "92"
             dataType: VARCHAR(5)
@@ -427,7 +461,8 @@ steps:
                   - columnCounter: 6094
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6225
               stepCounter: "92"
             dataType: VARCHAR(3)
@@ -439,7 +474,8 @@ steps:
                   - columnCounter: 6095
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6322
               stepCounter: "92"
             dataType: VARCHAR(3)
@@ -451,7 +487,8 @@ steps:
                   - columnCounter: 6095
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6226
               stepCounter: "92"
             dataType: VARCHAR(40)
@@ -463,7 +500,8 @@ steps:
                   - columnCounter: 6096
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6227
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -475,7 +513,8 @@ steps:
                   - columnCounter: 6097
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6228
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -487,7 +526,8 @@ steps:
                   - columnCounter: 6098
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6229
               stepCounter: "92"
             dataType: VARCHAR(50)
@@ -499,7 +539,8 @@ steps:
                   - columnCounter: 6099
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6230
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -511,7 +552,8 @@ steps:
                   - columnCounter: 6100
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6231
               stepCounter: "92"
             dataType: VARCHAR(4)
@@ -523,7 +565,8 @@ steps:
                   - columnCounter: 6101
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6232
               stepCounter: "92"
             dataType: VARCHAR(4)
@@ -535,7 +578,8 @@ steps:
                   - columnCounter: 6102
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6233
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -547,7 +591,8 @@ steps:
                   - columnCounter: 6103
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6234
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -559,7 +604,8 @@ steps:
                   - columnCounter: 6104
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6235
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -571,7 +617,8 @@ steps:
                   - columnCounter: 6105
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6236
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -583,7 +630,8 @@ steps:
                   - columnCounter: 6106
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6237
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -595,7 +643,8 @@ steps:
                   - columnCounter: 6107
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6238
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -607,7 +656,8 @@ steps:
                   - columnCounter: 6108
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6239
               stepCounter: "92"
             dataType: VARCHAR(4)
@@ -619,7 +669,8 @@ steps:
                   - columnCounter: 6109
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6240
               stepCounter: "92"
             dataType: VARCHAR(4)
@@ -631,7 +682,8 @@ steps:
                   - columnCounter: 6110
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6241
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -643,7 +695,8 @@ steps:
                   - columnCounter: 6111
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6242
               stepCounter: "92"
             dataType: VARCHAR(4)
@@ -655,7 +708,8 @@ steps:
                   - columnCounter: 6112
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6243
               stepCounter: "92"
             dataType: VARCHAR(4)
@@ -667,7 +721,8 @@ steps:
                   - columnCounter: 6113
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6244
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -679,7 +734,8 @@ steps:
                   - columnCounter: 6114
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6245
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -691,7 +747,8 @@ steps:
                   - columnCounter: 6115
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6246
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -703,7 +760,8 @@ steps:
                   - columnCounter: 6116
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6247
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -715,7 +773,8 @@ steps:
                   - columnCounter: 6117
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6248
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -727,7 +786,8 @@ steps:
                   - columnCounter: 6118
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6249
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -739,7 +799,8 @@ steps:
                   - columnCounter: 6119
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6250
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -751,7 +812,8 @@ steps:
                   - columnCounter: 6120
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6251
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -763,7 +825,8 @@ steps:
                   - columnCounter: 6121
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6252
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -775,7 +838,8 @@ steps:
                   - columnCounter: 6122
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6253
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -787,7 +851,8 @@ steps:
                   - columnCounter: 6123
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6254
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -799,7 +864,8 @@ steps:
                   - columnCounter: 6124
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6255
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -811,7 +877,8 @@ steps:
                   - columnCounter: 6125
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6256
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -823,7 +890,8 @@ steps:
                   - columnCounter: 6126
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6257
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -835,7 +903,8 @@ steps:
                   - columnCounter: 6127
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6258
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -847,7 +916,8 @@ steps:
                   - columnCounter: 6128
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6259
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -859,7 +929,8 @@ steps:
                   - columnCounter: 6129
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6260
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -871,7 +942,8 @@ steps:
                   - columnCounter: 6130
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6261
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -883,7 +955,8 @@ steps:
                   - columnCounter: 6131
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6262
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -895,7 +968,8 @@ steps:
                   - columnCounter: 6132
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6263
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -907,7 +981,8 @@ steps:
                   - columnCounter: 6133
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6264
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -919,7 +994,8 @@ steps:
                   - columnCounter: 6134
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6265
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -931,7 +1007,8 @@ steps:
                   - columnCounter: 6135
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6266
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -943,7 +1020,8 @@ steps:
                   - columnCounter: 6136
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6267
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -955,7 +1033,8 @@ steps:
                   - columnCounter: 6137
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6268
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -967,7 +1046,8 @@ steps:
                   - columnCounter: 6138
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6269
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -979,7 +1059,8 @@ steps:
                   - columnCounter: 6139
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6270
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -991,7 +1072,8 @@ steps:
                   - columnCounter: 6140
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6271
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1003,7 +1085,8 @@ steps:
                   - columnCounter: 6141
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6272
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1015,7 +1098,8 @@ steps:
                   - columnCounter: 6142
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6273
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1027,7 +1111,8 @@ steps:
                   - columnCounter: 6143
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6274
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1039,7 +1124,8 @@ steps:
                   - columnCounter: 6144
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6275
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1051,7 +1137,8 @@ steps:
                   - columnCounter: 6145
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6276
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1063,7 +1150,8 @@ steps:
                   - columnCounter: 6146
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6277
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1075,7 +1163,8 @@ steps:
                   - columnCounter: 6147
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6278
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1087,7 +1176,8 @@ steps:
                   - columnCounter: 6148
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6279
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1099,7 +1189,8 @@ steps:
                   - columnCounter: 6149
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6280
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1111,7 +1202,8 @@ steps:
                   - columnCounter: 6150
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6281
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1123,7 +1215,8 @@ steps:
                   - columnCounter: 6151
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6282
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1135,7 +1228,8 @@ steps:
                   - columnCounter: 6152
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6283
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1147,7 +1241,8 @@ steps:
                   - columnCounter: 6153
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6284
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1159,7 +1254,8 @@ steps:
                   - columnCounter: 6154
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6285
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1171,7 +1267,8 @@ steps:
                   - columnCounter: 6155
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6286
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1183,7 +1280,8 @@ steps:
                   - columnCounter: 6156
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6287
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1195,7 +1293,8 @@ steps:
                   - columnCounter: 6157
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6288
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1207,7 +1306,8 @@ steps:
                   - columnCounter: 6158
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6289
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1219,7 +1319,8 @@ steps:
                   - columnCounter: 6159
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6290
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1231,7 +1332,8 @@ steps:
                   - columnCounter: 6160
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6291
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1243,7 +1345,8 @@ steps:
                   - columnCounter: 6161
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6292
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1255,7 +1358,8 @@ steps:
                   - columnCounter: 6162
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6293
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1267,7 +1371,8 @@ steps:
                   - columnCounter: 6163
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6294
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1279,7 +1384,8 @@ steps:
                   - columnCounter: 6164
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6295
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1291,7 +1397,8 @@ steps:
                   - columnCounter: 6165
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6296
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1303,7 +1410,8 @@ steps:
                   - columnCounter: 6166
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6297
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1315,7 +1423,8 @@ steps:
                   - columnCounter: 6167
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6298
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1327,7 +1436,8 @@ steps:
                   - columnCounter: 6168
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6299
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1339,7 +1449,8 @@ steps:
                   - columnCounter: 6169
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6300
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1351,7 +1462,8 @@ steps:
                   - columnCounter: 6170
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6301
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1363,7 +1475,8 @@ steps:
                   - columnCounter: 6171
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6302
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1375,7 +1488,8 @@ steps:
                   - columnCounter: 6172
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6303
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1387,7 +1501,8 @@ steps:
                   - columnCounter: 6173
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6304
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1399,7 +1514,8 @@ steps:
                   - columnCounter: 6174
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6305
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1411,7 +1527,8 @@ steps:
                   - columnCounter: 6175
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6306
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1423,7 +1540,8 @@ steps:
                   - columnCounter: 6176
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6307
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1435,7 +1553,8 @@ steps:
                   - columnCounter: 6177
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6308
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1447,7 +1566,8 @@ steps:
                   - columnCounter: 6178
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6309
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1459,7 +1579,8 @@ steps:
                   - columnCounter: 6179
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6310
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1471,7 +1592,8 @@ steps:
                   - columnCounter: 6180
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6311
               stepCounter: "92"
             dataType: VARCHAR(10)
@@ -1483,7 +1605,8 @@ steps:
                   - columnCounter: 6181
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests: {}
+            columnReference:
               columnCounter: 6312
               stepCounter: "92"
             dataType: VARCHAR(1)
@@ -1722,7 +1845,6 @@ steps:
             dataType: STRING
             defaultValue: ""
             description: ""
-            hashColumns: []
             hashDetails:
               hashAlgorithm: MD5
             hashedColumns:
@@ -1744,7 +1866,6 @@ steps:
             dataType: STRING
             defaultValue: ""
             description: ""
-            hashColumns: []
             hashDetails:
               hashAlgorithm: MD5
             hashedColumns:
@@ -1758,7 +1879,9 @@ steps:
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - customSQL:
+          - aliases:
+              ON_TIME_FLIGHT: "89"
+            customSQL:
               customSQL: ""
             dependencies:
               - locationName: SRC

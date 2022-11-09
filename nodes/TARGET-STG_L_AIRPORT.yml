@@ -17,12 +17,25 @@ steps:
       locationName: TARGET
       materializationType: table
       metadata:
-        appliedNodeTests: []
+        appliedNodeTests:
+          - continueOnFailure: true
+            description: ""
+            name: Null-Test Record Source
+            runOrder: After
+            templateString: |-
+              SELECT
+                *
+              FROM
+                "DEV_GLUNDE"."COALESCE_BA"."STG_L_AIRPORT"
+              WHERE
+                "RECORD_SOURCE" IS NULL
         columns:
           - acceptedValues:
               strictMatch: true
               values: []
-            appliedColumnTests: {}
+            appliedColumnTests:
+              hasNull: false
+              isDistinct: false
             columnReference:
               columnCounter: 6190
               stepCounter: "91"
@@ -30,7 +43,6 @@ steps:
             dataType: STRING
             defaultValue: ""
             description: ""
-            hashColumns: []
             hashDetails:
               hashAlgorithm: MD5
             hashedColumns:
@@ -45,13 +57,14 @@ steps:
                 transform: ""
               - columnReferences: []
                 transform: ""
-          - columnReference:
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
               columnCounter: 6188
               stepCounter: "91"
             dataType: VARCHAR(5)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: AIRPORT_CODE
             nullable: true
             sourceColumnReferences:
@@ -67,13 +80,14 @@ steps:
                   - columnCounter: 6095
                     stepCounter: "89"
                 transform: ""
-          - columnReference:
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
               columnCounter: 6189
               stepCounter: "91"
             dataType: VARCHAR(200)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: AIRPORT_DESCRIPTION
             nullable: true
             sourceColumnReferences:
@@ -88,7 +102,9 @@ steps:
           - acceptedValues:
               strictMatch: true
               values: []
-            appliedColumnTests: {}
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: true
             columnReference:
               columnCounter: 6191
               stepCounter: "91"
@@ -110,7 +126,9 @@ steps:
                 transform: ""
             systemColumnType: None
             transform: ""
-        enabledColumnTestIDs: []
+        enabledColumnTestIDs:
+          - isDistinct
+          - hasNull
         sourceMapping:
           - aliases:
               L_AIRPORT: "87"
