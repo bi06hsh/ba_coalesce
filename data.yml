@@ -1,4 +1,4 @@
-defaultStorageMapping: SRC
+defaultStorageMapping: TARGET
 jobs: {}
 locations:
   SRC:

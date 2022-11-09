@@ -1,0 +1,48 @@
+steps:
+  L_AIRPORT-93:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      locationID: ""
+      locationName: SRC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6327
+              stepCounter: 93
+            config: {}
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: CODE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6328
+              stepCounter: 93
+            config: {}
+            dataType: VARCHAR(200)
+            defaultValue: ""
+            description: ""
+            name: DESCRIPTION
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SRC', 'L_AIRPORT') }}
+      name: L_AIRPORT
+      schema: ""
+      sqlType: Source
+      table: L_AIRPORT
+      type: sourceInput
+    stepCounter: "93"
