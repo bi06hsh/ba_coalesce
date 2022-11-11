@@ -1,0 +1,178 @@
+steps:
+  STG_L_CARRIER-90:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationID: ""
+      locationName: TARGET
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6186
+              stepCounter: "90"
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 6183
+                stepCounter: "90"
+            name: CARRIER_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 6183
+              stepCounter: "90"
+            dataType: VARCHAR(10)
+            description: ""
+            name: CARRIER_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6061
+                    stepCounter: "88"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 6072
+                    stepCounter: "89"
+                transform: ""
+          - columnReference:
+              columnCounter: 6184
+              stepCounter: "90"
+            dataType: VARCHAR(200)
+            description: ""
+            name: CARRIER_DESCRIPTION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6062
+                    stepCounter: "88"
+                transform: ""
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6185
+              stepCounter: "90"
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0
+                    stepCounter: "0"
+                transform: "'L_CARRIER'"
+              - columnReferences: []
+                transform: "'ON_TIME_FLIGHT'"
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3506
+              stepCounter: "90"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: Load_Date
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0
+                    stepCounter: "0"
+                transform: CURRENT_TIMESTAMP()
+              - columnReferences: []
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3507
+              stepCounter: "90"
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: testtest
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0
+                    stepCounter: "0"
+                transform: CURRENT_USER()
+              - columnReferences: []
+                transform: ""
+            systemColumnType: None
+            transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              L_CARRIER: "88"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SRC
+                nodeName: L_CARRIER
+            join:
+              joinCondition: FROM {{ ref('SRC', 'L_CARRIER') }} "L_CARRIER"
+            name: STG_L_CARRIER
+            noLinkRefs: []
+          - aliases:
+              ON_TIME_FLIGHT: "89"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SRC
+                nodeName: L_CARRIER
+              - locationName: SRC
+                nodeName: ON_TIME_FLIGHT
+            join:
+              joinCondition: |-
+                FROM {{ ref('SRC', 'ON_TIME_FLIGHT') }} "ON_TIME_FLIGHT"
+                WHERE IATA_CODE_MARKETING_AIRLINE NOT IN 
+                (SELECT code FROM {{ ref('SRC', 'L_CARRIER') }} "L_CARRIER")
+            name: ON_TIME_FLIGHT
+            noLinkRefs: []
+      name: STG_L_CARRIER
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: "90"
