@@ -69,7 +69,7 @@ stepTypes:
         create:
           templateString: |-
             {{ stage('Create Satellite Table') }}
-            
+
             CREATE OR REPLACE TABLE {{ ref_no_link(node.location.name, node.name) }}
             (
             	{% for col in columns %}
@@ -88,7 +88,7 @@ stepTypes:
             	{{ stage('Pre-SQL') }}
             	{{ config.preSQL }}
             {% endif %}
-            
+
             {{ stage('Insert New Rows') }}
             INSERT INTO {{ ref_no_link(node.location.name, node.name) }}
             WITH "SAT_CURR_ROWS" AS (
@@ -103,14 +103,14 @@ stepTypes:
             		{% endif %}
             	{% endfor %}
             )
-            
+
             	{% for source in sources %}
             		SELECT DISTINCT
             		{% for col in source.columns %}
             			{{ get_source_transform(col) }} AS "{{ col.name }}"
             			{%- if not loop.last -%}, {% endif %}
             		{% endfor %}
-            
+
             		{{ source.join }}
             	WHERE NOT EXISTS(
             		SELECT 1 FROM "SAT_CURR_ROWS"
@@ -122,9 +122,9 @@ stepTypes:
             			{{ get_source_transform(col) }} = "SAT_CURR_ROWS"."{{ col.name }}"
             		{% endfor %}
             	)
-            
+
             	{% endfor %}
-            
+
             {% if config.postSQL %}
             	{{ stage('Post-SQL') }}
             	{{ config.postSQL }}
@@ -189,7 +189,7 @@ stepTypes:
         create:
           templateString: |-
             {{ stage('Create Hub Table') }}
-            
+
             CREATE OR REPLACE TABLE {{ ref_no_link(node.location.name, node.name) }}
             (
             	{% for col in columns %}
@@ -208,9 +208,9 @@ stepTypes:
             	{{ stage('Pre-SQL') }}
             	{{ config.preSQL }}
             {% endif %}
-            
+
             {% for source in sources %}
-            
+
             	{{ stage('Merge Hub - ' ~ source.name) }}
             	MERGE INTO {{ ref_no_link(node.location.name, node.name) }} "TGT" USING
             	(
@@ -219,9 +219,9 @@ stepTypes:
             			{{ get_source_transform(col) }} AS "{{ col.name }}"
             			{%- if not loop.last -%}, {% endif %}
             		{% endfor %}
-            
+
             		{{ source.join }}
-            
+
             		{% if not loop.last %}
             			{{ config.insertStrategy }}
             		{% endif %}
@@ -248,9 +248,9 @@ stepTypes:
             			{%- if not loop.last -%}, {% endif %}
             		{% endfor %}
             	)
-            
+
             {% endfor %}
-            
+
             {% if config.postSQL %}
             	{{ stage('Post-SQL') }}
             	{{ config.postSQL }}
@@ -321,7 +321,7 @@ stepTypes:
         create:
           templateString: |-
             {{ stage('Create Link Table') }}
-            
+
             CREATE OR REPLACE TABLE {{ ref_no_link(node.location.name, node.name) }}
             (
                 {% for col in columns %}
@@ -339,9 +339,9 @@ stepTypes:
             {% if config.preSQL %}
                 {{ stage('Pre-SQL') }}
                 {{ config.preSQL }}
-            
+
             {% endif %}
-            
+
             {% for source in sources %}
                         
                 {{ stage('Merge Link - ' ~ source.name) }}
@@ -352,9 +352,9 @@ stepTypes:
                         {{ get_source_transform(col) }} AS "{{ col.name }}"
                         {%- if not loop.last -%}, {% endif %}
                     {% endfor %}
-            
+
                     {{ source.join }}
-            
+
                     {% if not loop.last %}
                         {{ config.insertStrategy }}
                     {% endif %}
@@ -381,9 +381,9 @@ stepTypes:
                         {%- if not loop.last -%}, {% endif %}
                     {% endfor %}
                 )
-            
+
             {% endfor %}
-            
+
             {% if config.postSQL %}
                 {{ stage('Post-SQL') }}
                 {{ config.postSQL }}    
