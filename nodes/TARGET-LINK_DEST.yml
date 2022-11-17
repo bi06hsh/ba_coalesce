@@ -1,5 +1,5 @@
 steps:
-  LNK_ON_TIME_FLIGHT-111:
+  LINK_DEST-111:
     operation:
       config:
         insertStrategy: UNION
@@ -103,9 +103,9 @@ steps:
                 nodeName: STG_ON_TIME_FLIGHT
             join:
               joinCondition: FROM {{ ref('TARGET', 'STG_ON_TIME_FLIGHT') }} "STG_ON_TIME_FLIGHT"
-            name: LNK_ON_TIME_FLIGHT
+            name: LINK_DEST
             noLinkRefs: []
-      name: LNK_ON_TIME_FLIGHT
+      name: LINK_DEST
       overrideSQL: false
       schema: ""
       sqlType: COALESCE-DATA_VAULT::2
