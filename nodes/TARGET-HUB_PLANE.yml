@@ -1,5 +1,5 @@
 steps:
-  AIRPORT_HUB-96:
+  HUB_PLANE-105:
     operation:
       config:
         postSQL: ""
@@ -16,57 +16,49 @@ steps:
       metadata:
         appliedNodeTests: []
         columns:
-          - columnReference:
-              columnCounter: 6451
-              stepCounter: "96"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7330
+              stepCounter: "105"
             config:
               isHubHash: true
             dataType: STRING
+            defaultValue: ""
             description: ""
-            hashColumns: []
-            hashDetails: null
-            name: AIRPORT_HK
+            keyColumnType: None
+            name: PLANE_HK
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6190
-                    stepCounter: "91"
+                  - columnCounter: 6317
+                    stepCounter: "92"
                 transform: ""
+            systemColumnType: None
+            transform: ""
           - columnReference:
-              columnCounter: 6452
-              stepCounter: "96"
-            dataType: VARCHAR(5)
+              columnCounter: 7214
+              stepCounter: "105"
+            dataType: VARCHAR(6)
             description: ""
             hashColumns: []
             hashDetails: null
-            name: AIRPORT_CODE
+            name: TAIL_NUMBER
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6188
-                    stepCounter: "91"
-                transform: ""
-          - columnReference:
-              columnCounter: 6454
-              stepCounter: "96"
-            dataType: VARCHAR(50)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: RECORD_SOURCE
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 6191
-                    stepCounter: "91"
+                  - columnCounter: 6211
+                    stepCounter: "92"
                 transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 6455
-              stepCounter: "96"
+              columnCounter: 7328
+              stepCounter: "105"
             config: {}
             dataType: TIMESTAMP
             defaultValue: ""
@@ -78,6 +70,26 @@ steps:
             sourceColumnReferences:
               - columnReferences: []
                 transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7329
+              stepCounter: "105"
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemRecordSource: true
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6314
+                    stepCounter: "92"
+                transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
@@ -85,14 +97,14 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: TARGET
-                nodeName: STG_L_AIRPORT
+                nodeName: STG_ON_TIME_FLIGHT
             join:
-              joinCondition: FROM {{ ref('TARGET', 'STG_L_AIRPORT') }} "STG_L_AIRPORT"
-            name: AIRPORT_HUB
+              joinCondition: FROM {{ ref('TARGET', 'STG_ON_TIME_FLIGHT') }} "STG_ON_TIME_FLIGHT"
+            name: HUB_PLANE
             noLinkRefs: []
-      name: AIRPORT_HUB
+      name: HUB_PLANE
       overrideSQL: false
       schema: ""
       sqlType: COALESCE-DATA_VAULT::1
       type: sql
-    stepCounter: "96"
+    stepCounter: "105"
