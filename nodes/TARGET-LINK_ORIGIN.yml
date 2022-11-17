@@ -1,0 +1,120 @@
+steps:
+  LINK_ORIGIN-110:
+    operation:
+      config:
+        insertStrategy: UNION
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: TARGET
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 7875
+              stepCounter: "110"
+            config:
+              isLinkHash: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORIGIN_LINK_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6323
+                    stepCounter: "92"
+                transform: ""
+          - columnReference:
+              columnCounter: 7877
+              stepCounter: "110"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORIGIN_AIRPORT_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6326
+                    stepCounter: "92"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7880
+              stepCounter: "110"
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: FLIGHT_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6316
+                    stepCounter: "92"
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7878
+              stepCounter: "110"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - columnReference:
+              columnCounter: 7868
+              stepCounter: "110"
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6314
+                    stepCounter: "92"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: STG_ON_TIME_FLIGHT
+            join:
+              joinCondition: FROM {{ ref('TARGET', 'STG_ON_TIME_FLIGHT') }} "STG_ON_TIME_FLIGHT"
+            name: LINK_ORIGIN
+            noLinkRefs: []
+      name: LINK_ORIGIN
+      overrideSQL: false
+      schema: ""
+      sqlType: COALESCE-DATA_VAULT::2
+      type: sql
+    stepCounter: "110"
