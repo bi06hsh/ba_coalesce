@@ -23,8 +23,6 @@ steps:
               isHubHash: true
             dataType: STRING
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: AIRPORT_HK
             nullable: true
             sourceColumnReferences:
@@ -44,7 +42,6 @@ steps:
             dataType: STRING
             defaultValue: ""
             description: ""
-            hashColumns: []
             hashDetails:
               hashAlgorithm: SHA1
             hashedColumns:
@@ -60,8 +57,6 @@ steps:
               stepCounter: "113"
             dataType: VARCHAR(200)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: AIRPORT_DESCRIPTION
             nullable: true
             sourceColumnReferences:
@@ -80,7 +75,6 @@ steps:
             dataType: TIMESTAMP
             defaultValue: ""
             description: ""
-            hashColumns: []
             isSystemCreateDate: true
             name: LOAD_DATE
             nullable: true
@@ -92,8 +86,6 @@ steps:
               stepCounter: "113"
             dataType: VARCHAR(50)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: RECORD_SOURCE
             nullable: true
             sourceColumnReferences:
