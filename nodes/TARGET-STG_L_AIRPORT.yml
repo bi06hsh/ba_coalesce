@@ -42,7 +42,7 @@ steps:
             config: {}
             dataType: STRING
             defaultValue: ""
-            description: MD5-Hashwert des Airport-Code
+            description: ""
             hashDetails:
               hashAlgorithm: MD5
             hashedColumns:
@@ -64,7 +64,7 @@ steps:
               columnCounter: 6188
               stepCounter: "91"
             dataType: VARCHAR(5)
-            description: 3-stelliger Code eine Airports
+            description: ""
             name: AIRPORT_CODE
             nullable: true
             sourceColumnReferences:
@@ -87,7 +87,7 @@ steps:
               columnCounter: 6189
               stepCounter: "91"
             dataType: VARCHAR(200)
-            description: Beschreibung und Name des Airports
+            description: ""
             name: AIRPORT_DESCRIPTION
             nullable: true
             sourceColumnReferences:
@@ -111,7 +111,7 @@ steps:
             config: {}
             dataType: VARCHAR(50)
             defaultValue: ""
-            description: Name der Quelltabelle
+            description: ""
             keyColumnType: None
             name: RECORD_SOURCE
             nullable: true
