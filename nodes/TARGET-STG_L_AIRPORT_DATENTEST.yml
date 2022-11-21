@@ -99,27 +99,6 @@ steps:
                   - columnCounter: 6191
                     stepCounter: "91"
                 transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 8685
-              stepCounter: "122"
-            config: {}
-            dataType: VARCHAR(50)
-            defaultValue: ""
-            description: ""
-            keyColumnType: None
-            name: SOURCE
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 0
-                    stepCounter: "0"
-                transform: "'TEST'"
-            systemColumnType: None
-            transform: ""
         cteString: ""
         enabledColumnTestIDs:
           - hasNull
