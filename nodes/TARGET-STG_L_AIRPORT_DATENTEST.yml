@@ -1,9 +1,12 @@
 steps:
-  SAT_AIRPORT-113:
+  STG_L_AIRPORT_DATENTEST-122:
     operation:
       config:
+        insertStrategy: INSERT
         postSQL: ""
         preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: true
@@ -16,13 +19,16 @@ steps:
       metadata:
         appliedNodeTests: []
         columns:
-          - columnReference:
-              columnCounter: 8026
-              stepCounter: "113"
-            config:
-              isHubHash: true
+          - appliedColumnTests:
+              hasNull: true
+              isDistinct: true
+            columnReference:
+              columnCounter: 8681
+              stepCounter: "122"
             dataType: STRING
             description: ""
+            hashColumns: []
+            hashDetails: null
             name: AIRPORT_HK
             nullable: true
             sourceColumnReferences:
@@ -30,33 +36,33 @@ steps:
                   - columnCounter: 6190
                     stepCounter: "91"
                 transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
+          - appliedColumnTests:
+              hasNull: true
+              isDistinct: true
             columnReference:
-              columnCounter: 8032
-              stepCounter: "113"
-            config:
-              isChangeHash: true
-            dataType: STRING
-            defaultValue: ""
+              columnCounter: 8682
+              stepCounter: "122"
+            dataType: VARCHAR(5)
             description: ""
-            hashDetails:
-              hashAlgorithm: SHA1
-            hashedColumns:
-              - columnCounter: 8028
-                stepCounter: "113"
-            name: HASHDIFF
+            hashColumns: []
+            hashDetails: null
+            name: AIRPORT_CODE
             nullable: true
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 6188
+                    stepCounter: "91"
                 transform: ""
-          - columnReference:
-              columnCounter: 8028
-              stepCounter: "113"
+          - appliedColumnTests:
+              hasNull: true
+              isDistinct: true
+            columnReference:
+              columnCounter: 8683
+              stepCounter: "122"
             dataType: VARCHAR(200)
             description: ""
+            hashColumns: []
+            hashDetails: null
             name: AIRPORT_DESCRIPTION
             nullable: true
             sourceColumnReferences:
@@ -64,28 +70,16 @@ steps:
                   - columnCounter: 6189
                     stepCounter: "91"
                 transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
+          - appliedColumnTests:
+              hasNull: true
+              isDistinct: true
             columnReference:
-              columnCounter: 8030
-              stepCounter: "113"
-            config: {}
-            dataType: TIMESTAMP
-            defaultValue: ""
-            description: ""
-            isSystemCreateDate: true
-            name: LOAD_DATE
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
-          - columnReference:
-              columnCounter: 8029
-              stepCounter: "113"
+              columnCounter: 8684
+              stepCounter: "122"
             dataType: VARCHAR(50)
             description: ""
+            hashColumns: []
+            hashDetails: null
             name: RECORD_SOURCE
             nullable: true
             sourceColumnReferences:
@@ -94,7 +88,9 @@ steps:
                     stepCounter: "91"
                 transform: ""
         cteString: ""
-        enabledColumnTestIDs: []
+        enabledColumnTestIDs:
+          - hasNull
+          - isDistinct
         sourceMapping:
           - customSQL:
               customSQL: ""
@@ -103,11 +99,11 @@ steps:
                 nodeName: STG_L_AIRPORT
             join:
               joinCondition: FROM {{ ref('TARGET', 'STG_L_AIRPORT') }} "STG_L_AIRPORT"
-            name: SAT_AIRPORT
+            name: STG_L_AIRPORT_DATENTEST
             noLinkRefs: []
-      name: SAT_AIRPORT
+      name: STG_L_AIRPORT_DATENTEST
       overrideSQL: false
       schema: ""
-      sqlType: COALESCE-DATA_VAULT::3
+      sqlType: Stage
       type: sql
-    stepCounter: "113"
+    stepCounter: "122"
