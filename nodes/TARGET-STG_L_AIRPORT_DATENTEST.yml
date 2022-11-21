@@ -17,7 +17,19 @@ steps:
       locationName: TARGET
       materializationType: table
       metadata:
-        appliedNodeTests: []
+        appliedNodeTests:
+          - continueOnFailure: false
+            description: ""
+            name: Test
+            runOrder: After
+            templateString: |-
+              SELECT
+                RECORD_SOURCE
+              FROM
+                "DEV_GLUNDE"."COALESCE_BA"."STG_L_AIRPORT_DATENTEST"
+              group by
+                  RECORD_SOURCE
+                  HAVING count(*) > 1;
         columns:
           - appliedColumnTests:
               hasNull: true
@@ -87,6 +99,27 @@ steps:
                   - columnCounter: 6191
                     stepCounter: "91"
                 transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8685
+              stepCounter: "122"
+            config: {}
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0
+                    stepCounter: "0"
+                transform: "'TEST'"
+            systemColumnType: None
+            transform: ""
         cteString: ""
         enabledColumnTestIDs:
           - hasNull
