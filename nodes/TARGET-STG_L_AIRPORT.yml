@@ -17,25 +17,12 @@ steps:
       locationName: TARGET
       materializationType: table
       metadata:
-        appliedNodeTests:
-          - continueOnFailure: true
-            description: ""
-            name: Null-Test Record Source
-            runOrder: After
-            templateString: |-
-              SELECT
-                *
-              FROM
-                "DEV_GLUNDE"."COALESCE_BA"."STG_L_AIRPORT"
-              WHERE
-                "RECORD_SOURCE" IS NULL
+        appliedNodeTests: []
         columns:
           - acceptedValues:
               strictMatch: true
               values: []
-            appliedColumnTests:
-              hasNull: false
-              isDistinct: false
+            appliedColumnTests: {}
             columnReference:
               columnCounter: 6190
               stepCounter: "91"
@@ -57,9 +44,7 @@ steps:
                 transform: ""
               - columnReferences: []
                 transform: ""
-          - appliedColumnTests:
-              hasNull: false
-              isDistinct: false
+          - appliedColumnTests: {}
             columnReference:
               columnCounter: 6188
               stepCounter: "91"
@@ -80,9 +65,7 @@ steps:
                   - columnCounter: 6095
                     stepCounter: "89"
                 transform: ""
-          - appliedColumnTests:
-              hasNull: false
-              isDistinct: false
+          - appliedColumnTests: {}
             columnReference:
               columnCounter: 6189
               stepCounter: "91"
@@ -102,9 +85,7 @@ steps:
           - acceptedValues:
               strictMatch: true
               values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: true
+            appliedColumnTests: {}
             columnReference:
               columnCounter: 6191
               stepCounter: "91"
@@ -126,9 +107,7 @@ steps:
                 transform: ""
             systemColumnType: None
             transform: ""
-        enabledColumnTestIDs:
-          - isDistinct
-          - hasNull
+        enabledColumnTestIDs: []
         sourceMapping:
           - aliases:
               L_AIRPORT: "87"

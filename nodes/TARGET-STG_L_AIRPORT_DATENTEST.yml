@@ -17,7 +17,19 @@ steps:
       locationName: TARGET
       materializationType: table
       metadata:
-        appliedNodeTests: []
+        appliedNodeTests:
+          - continueOnFailure: false
+            description: ""
+            name: Test
+            runOrder: After
+            templateString: |-
+              SELECT
+                RECORD_SOURCE
+              FROM
+                "DEV_GLUNDE"."COALESCE_BA"."STG_L_AIRPORT_DATENTEST"
+              group by
+                  RECORD_SOURCE
+                  HAVING count(*) > 1;
         columns:
           - appliedColumnTests:
               hasNull: true
