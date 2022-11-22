@@ -116,6 +116,8 @@ steps:
             dependencies:
               - locationName: SRC
                 nodeName: L_AIRPORT
+              - locationName: SRC
+                nodeName: ON_TIME_FLIGHT
             join:
               joinCondition: FROM {{ ref('SRC', 'L_AIRPORT') }} "L_AIRPORT"
             name: STG_L_AIRPORT
