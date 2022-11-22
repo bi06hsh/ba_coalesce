@@ -59,7 +59,7 @@ steps:
             defaultValue: ""
             description: Beschreibung und Name des Airports
             keyColumnType: None
-            name: DATE
+            name: THIS_DATE
             nullable: true
             sourceColumnReferences:
               - columnReferences:
@@ -80,7 +80,7 @@ steps:
             defaultValue: ""
             description: Name der Quelltabelle
             keyColumnType: None
-            name: USER
+            name: THIS_USER
             nullable: true
             sourceColumnReferences:
               - columnReferences:

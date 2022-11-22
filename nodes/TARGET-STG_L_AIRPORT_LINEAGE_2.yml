@@ -54,7 +54,7 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: DATE
+            name: THIS_DATE
             nullable: true
             sourceColumnReferences:
               - columnReferences:
@@ -68,7 +68,7 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: USER
+            name: THIS_USER
             nullable: true
             sourceColumnReferences:
               - columnReferences:
@@ -93,7 +93,7 @@ steps:
               - columnReferences:
                   - columnCounter: 0
                     stepCounter: "0"
-                transform: to_varchar(year(DATE))
+                transform: to_varchar(year(THIS_DATE))
             systemColumnType: None
             transform: ""
           - acceptedValues:
@@ -114,7 +114,7 @@ steps:
               - columnReferences:
                   - columnCounter: 0
                     stepCounter: "0"
-                transform: to_varchar(month(DATE))
+                transform: to_varchar(month(THIS_DATE))
             systemColumnType: None
             transform: ""
           - acceptedValues:
@@ -135,7 +135,7 @@ steps:
               - columnReferences:
                   - columnCounter: 0
                     stepCounter: "0"
-                transform: to_varchar(day(DATE))
+                transform: to_varchar(day(THIS_DATE))
             systemColumnType: None
             transform: ""
           - acceptedValues:
@@ -156,7 +156,7 @@ steps:
               - columnReferences:
                   - columnCounter: 0
                     stepCounter: "0"
-                transform: SUBSTRING(user,0,CHARINDEX('_',user)-1)
+                transform: SUBSTRING(THIS_USER,0,CHARINDEX('_',THIS_USER)-1)
             systemColumnType: None
             transform: ""
           - acceptedValues:
@@ -177,7 +177,7 @@ steps:
               - columnReferences:
                   - columnCounter: 0
                     stepCounter: "0"
-                transform: SUBSTRING(user,CHARINDEX('_',user)+1,LEN(user)-1)
+                transform: SUBSTRING(THIS_USER,CHARINDEX('_',THIS_USER)+1,LEN(THIS_USER)-1)
             systemColumnType: None
             transform: ""
         cteString: ""
