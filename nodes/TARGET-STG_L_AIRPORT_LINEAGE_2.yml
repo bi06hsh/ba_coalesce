@@ -54,13 +54,11 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: THIS_DATE
+            name: DATE_2
             nullable: true
             sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 8321
-                    stepCounter: "119"
-                transform: ""
+              - columnReferences: []
+                transform: CURRENT_DATE()
           - columnReference:
               columnCounter: 8328
               stepCounter: "120"
@@ -68,13 +66,11 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: THIS_USER
+            name: USER_2
             nullable: true
             sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 8323
-                    stepCounter: "119"
-                transform: ""
+              - columnReferences: []
+                transform: CURRENT_USER()
           - acceptedValues:
               strictMatch: true
               values: []
@@ -90,10 +86,8 @@ steps:
             name: YEAR
             nullable: true
             sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 0
-                    stepCounter: "0"
-                transform: to_varchar(year(THIS_DATE))
+              - columnReferences: []
+                transform: to_varchar(year("STG_L_AIRPORT_LINEAGE"."DATE"))
             systemColumnType: None
             transform: ""
           - acceptedValues:
@@ -114,7 +108,7 @@ steps:
               - columnReferences:
                   - columnCounter: 0
                     stepCounter: "0"
-                transform: to_varchar(month(THIS_DATE))
+                transform: TO_VARCHAR(MONTH("STG_L_AIRPORT_LINEAGE"."DATE"))
             systemColumnType: None
             transform: ""
           - acceptedValues:
@@ -135,7 +129,7 @@ steps:
               - columnReferences:
                   - columnCounter: 0
                     stepCounter: "0"
-                transform: to_varchar(day(THIS_DATE))
+                transform: to_varchar(day("STG_L_AIRPORT_LINEAGE"."DATE"))
             systemColumnType: None
             transform: ""
           - acceptedValues:
@@ -156,7 +150,7 @@ steps:
               - columnReferences:
                   - columnCounter: 0
                     stepCounter: "0"
-                transform: SUBSTRING(THIS_USER,0,CHARINDEX('_',THIS_USER)-1)
+                transform: SUBSTRING("STG_L_AIRPORT_LINEAGE"."USER",0,CHARINDEX('_',"STG_L_AIRPORT_LINEAGE"."USER")-1)
             systemColumnType: None
             transform: ""
           - acceptedValues:
@@ -177,13 +171,15 @@ steps:
               - columnReferences:
                   - columnCounter: 0
                     stepCounter: "0"
-                transform: SUBSTRING(THIS_USER,CHARINDEX('_',THIS_USER)+1,LEN(THIS_USER)-1)
+                transform: SUBSTRING("STG_L_AIRPORT_LINEAGE"."USER",CHARINDEX('_',"STG_L_AIRPORT_LINEAGE"."USER")+1,LEN("STG_L_AIRPORT_LINEAGE"."USER")-1)
             systemColumnType: None
             transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - customSQL:
+          - aliases:
+              STG_L_AIRPORT_LINEAGE: "119"
+            customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
