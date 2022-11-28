@@ -24,8 +24,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(4)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: YEAR
             nullable: true
             sourceColumnReferences:
@@ -38,8 +36,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(1)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: QUARTER
             nullable: true
             sourceColumnReferences:
@@ -52,8 +48,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(1)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: MONTH
             nullable: true
             sourceColumnReferences:
@@ -66,8 +60,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DAYOFMONTH
             nullable: true
             sourceColumnReferences:
@@ -80,8 +72,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DAYOFWEEK
             nullable: true
             sourceColumnReferences:
@@ -94,8 +84,6 @@ steps:
               stepCounter: "149"
             dataType: DATE
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: FLIGHTDATE
             nullable: true
             sourceColumnReferences:
@@ -108,8 +96,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: MARKETING_AIRLINE_NETWORK
             nullable: true
             sourceColumnReferences:
@@ -122,8 +108,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(12)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: OPERATED_OR_BRANDED_CODE_SHARE_PARTNERS
             nullable: true
             sourceColumnReferences:
@@ -136,8 +120,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(5)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DOT_ID_MARKETING_AIRLINE
             nullable: true
             sourceColumnReferences:
@@ -150,8 +132,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: IATA_CODE_MARKETING_AIRLINE
             nullable: true
             sourceColumnReferences:
@@ -164,8 +144,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(4)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: FLIGHT_NUMBER_MARKETING_AIRLINE
             nullable: true
             sourceColumnReferences:
@@ -178,8 +156,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ORIGINALLY_SCHEDULED_CODE_SHARE_AIRLINE
             nullable: true
             sourceColumnReferences:
@@ -192,8 +168,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DOT_ID_ORIGINALLY_SCHEDULED_CODE_SHARE_AIRLINE
             nullable: true
             sourceColumnReferences:
@@ -206,8 +180,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: IATA_CODE_ORIGINALLY_SCHEDULED_CODE_SHARE_AIRLINE
             nullable: true
             sourceColumnReferences:
@@ -220,8 +192,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: FLIGHT_NUM_ORIGINALLY_SCHEDULED_CODE_SHARE_AIRLINE
             nullable: true
             sourceColumnReferences:
@@ -234,8 +204,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: OPERATING_AIRLINE
             nullable: true
             sourceColumnReferences:
@@ -248,8 +216,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(5)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DOT_ID_OPERATING_AIRLINE
             nullable: true
             sourceColumnReferences:
@@ -262,9 +228,19 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: IATA_CODE_OPERATING_AIRLINE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9753
+                    stepCounter: "147"
+                transform: ""
+          - columnReference:
+              columnCounter: 10231
+              stepCounter: "149"
+            dataType: VARCHAR(10)
+            description: ""
+            name: IATA_CODE_OPERATING_AIRLINE_2
             nullable: true
             sourceColumnReferences:
               - columnReferences:
@@ -276,8 +252,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(6)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: TAIL_NUMBER
             nullable: true
             sourceColumnReferences:
@@ -290,8 +264,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(4)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: FLIGHT_NUMBER_OPERATING_AIRLINE
             nullable: true
             sourceColumnReferences:
@@ -304,8 +276,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(5)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ORIGINAIRPORTID
             nullable: true
             sourceColumnReferences:
@@ -318,8 +288,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(7)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ORIGINAIRPORTSEQID
             nullable: true
             sourceColumnReferences:
@@ -332,8 +300,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(5)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ORIGINCITYMARKETID
             nullable: true
             sourceColumnReferences:
@@ -346,8 +312,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(3)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ORIGIN
             nullable: true
             sourceColumnReferences:
@@ -360,8 +324,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(40)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ORIGINCITYNAME
             nullable: true
             sourceColumnReferences:
@@ -374,8 +336,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ORIGINSTATE
             nullable: true
             sourceColumnReferences:
@@ -388,8 +348,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ORIGINSTATEFIPS
             nullable: true
             sourceColumnReferences:
@@ -402,8 +360,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(50)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ORIGINSTATENAME
             nullable: true
             sourceColumnReferences:
@@ -416,8 +372,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ORIGINWAC
             nullable: true
             sourceColumnReferences:
@@ -430,8 +384,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(5)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DESTAIRPORTID
             nullable: true
             sourceColumnReferences:
@@ -444,8 +396,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(7)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DESTAIRPORTSEQID
             nullable: true
             sourceColumnReferences:
@@ -458,8 +408,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(5)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DESTCITYMARKETID
             nullable: true
             sourceColumnReferences:
@@ -472,8 +420,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(3)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DEST
             nullable: true
             sourceColumnReferences:
@@ -486,8 +432,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(40)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DESTCITYNAME
             nullable: true
             sourceColumnReferences:
@@ -500,8 +444,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DESTSTATE
             nullable: true
             sourceColumnReferences:
@@ -514,8 +456,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DESTSTATEFIPS
             nullable: true
             sourceColumnReferences:
@@ -528,8 +468,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(50)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DESTSTATENAME
             nullable: true
             sourceColumnReferences:
@@ -542,8 +480,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DESTWAC
             nullable: true
             sourceColumnReferences:
@@ -556,8 +492,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(4)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: CRSDEPTIME
             nullable: true
             sourceColumnReferences:
@@ -570,8 +504,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(4)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DEPTIME
             nullable: true
             sourceColumnReferences:
@@ -584,8 +516,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DEPDELAY
             nullable: true
             sourceColumnReferences:
@@ -598,8 +528,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DEPDELAYMINUTES
             nullable: true
             sourceColumnReferences:
@@ -612,8 +540,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DEPDEL15
             nullable: true
             sourceColumnReferences:
@@ -626,8 +552,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DEPARTUREDELAYGROUPS
             nullable: true
             sourceColumnReferences:
@@ -640,8 +564,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DEPTIMEBLK
             nullable: true
             sourceColumnReferences:
@@ -654,8 +576,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: TAXIOUT
             nullable: true
             sourceColumnReferences:
@@ -668,8 +588,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(4)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: WHEELSOFF
             nullable: true
             sourceColumnReferences:
@@ -682,8 +600,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(4)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: WHEELSON
             nullable: true
             sourceColumnReferences:
@@ -696,8 +612,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: TAXIIN
             nullable: true
             sourceColumnReferences:
@@ -710,8 +624,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(4)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: CRSARRTIME
             nullable: true
             sourceColumnReferences:
@@ -724,8 +636,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(4)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ARRTIME
             nullable: true
             sourceColumnReferences:
@@ -738,8 +648,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ARRDELAY
             nullable: true
             sourceColumnReferences:
@@ -752,8 +660,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ARRDELAYMINUTES
             nullable: true
             sourceColumnReferences:
@@ -766,8 +672,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ARRDEL15
             nullable: true
             sourceColumnReferences:
@@ -780,8 +684,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ARRIVALDELAYGROUPS
             nullable: true
             sourceColumnReferences:
@@ -794,8 +696,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ARRTIMEBLK
             nullable: true
             sourceColumnReferences:
@@ -808,8 +708,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: CANCELLED
             nullable: true
             sourceColumnReferences:
@@ -822,8 +720,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: CANCELLATIONCODE
             nullable: true
             sourceColumnReferences:
@@ -836,8 +732,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIVERTED
             nullable: true
             sourceColumnReferences:
@@ -850,8 +744,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: CRSELAPSEDTIME
             nullable: true
             sourceColumnReferences:
@@ -864,8 +756,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: ACTUALELAPSEDTIME
             nullable: true
             sourceColumnReferences:
@@ -878,8 +768,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: AIRTIME
             nullable: true
             sourceColumnReferences:
@@ -892,8 +780,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: FLIGHTS
             nullable: true
             sourceColumnReferences:
@@ -906,8 +792,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DISTANCE
             nullable: true
             sourceColumnReferences:
@@ -920,8 +804,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DISTANCEGROUP
             nullable: true
             sourceColumnReferences:
@@ -934,8 +816,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: CARRIERDELAY
             nullable: true
             sourceColumnReferences:
@@ -948,8 +828,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: WEATHERDELAY
             nullable: true
             sourceColumnReferences:
@@ -962,8 +840,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: NASDELAY
             nullable: true
             sourceColumnReferences:
@@ -976,8 +852,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: SECURITYDELAY
             nullable: true
             sourceColumnReferences:
@@ -990,8 +864,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: LATEAIRCRAFTDELAY
             nullable: true
             sourceColumnReferences:
@@ -1004,8 +876,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: FIRSTDEPTIME
             nullable: true
             sourceColumnReferences:
@@ -1018,8 +888,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: TOTALADDGTIME
             nullable: true
             sourceColumnReferences:
@@ -1032,8 +900,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: LONGESTADDGTIME
             nullable: true
             sourceColumnReferences:
@@ -1046,8 +912,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIVAIRPORTLANDINGS
             nullable: true
             sourceColumnReferences:
@@ -1060,8 +924,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIVREACHEDDEST
             nullable: true
             sourceColumnReferences:
@@ -1074,8 +936,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIVACTUALELAPSEDTIME
             nullable: true
             sourceColumnReferences:
@@ -1088,8 +948,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIVARRDELAY
             nullable: true
             sourceColumnReferences:
@@ -1102,8 +960,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIVDISTANCE
             nullable: true
             sourceColumnReferences:
@@ -1116,8 +972,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV1AIRPORT
             nullable: true
             sourceColumnReferences:
@@ -1130,8 +984,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV1AIRPORTID
             nullable: true
             sourceColumnReferences:
@@ -1144,8 +996,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV1AIRPORTSEQID
             nullable: true
             sourceColumnReferences:
@@ -1158,8 +1008,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV1WHEELSON
             nullable: true
             sourceColumnReferences:
@@ -1172,8 +1020,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV1TOTALGTIME
             nullable: true
             sourceColumnReferences:
@@ -1186,8 +1032,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV1LONGESTGTIME
             nullable: true
             sourceColumnReferences:
@@ -1200,8 +1044,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV1WHEELSOFF
             nullable: true
             sourceColumnReferences:
@@ -1214,8 +1056,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV1TAILNUM
             nullable: true
             sourceColumnReferences:
@@ -1228,8 +1068,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV2AIRPORT
             nullable: true
             sourceColumnReferences:
@@ -1242,8 +1080,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV2AIRPORTID
             nullable: true
             sourceColumnReferences:
@@ -1256,8 +1092,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV2AIRPORTSEQID
             nullable: true
             sourceColumnReferences:
@@ -1270,8 +1104,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV2WHEELSON
             nullable: true
             sourceColumnReferences:
@@ -1284,8 +1116,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV2TOTALGTIME
             nullable: true
             sourceColumnReferences:
@@ -1298,8 +1128,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV2LONGESTGTIME
             nullable: true
             sourceColumnReferences:
@@ -1312,8 +1140,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV2WHEELSOFF
             nullable: true
             sourceColumnReferences:
@@ -1326,8 +1152,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV2TAILNUM
             nullable: true
             sourceColumnReferences:
@@ -1340,8 +1164,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV3AIRPORT
             nullable: true
             sourceColumnReferences:
@@ -1354,8 +1176,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV3AIRPORTID
             nullable: true
             sourceColumnReferences:
@@ -1368,8 +1188,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV3AIRPORTSEQID
             nullable: true
             sourceColumnReferences:
@@ -1382,8 +1200,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV3WHEELSON
             nullable: true
             sourceColumnReferences:
@@ -1396,8 +1212,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV3TOTALGTIME
             nullable: true
             sourceColumnReferences:
@@ -1410,8 +1224,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV3LONGESTGTIME
             nullable: true
             sourceColumnReferences:
@@ -1424,8 +1236,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV3WHEELSOFF
             nullable: true
             sourceColumnReferences:
@@ -1438,8 +1248,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV3TAILNUM
             nullable: true
             sourceColumnReferences:
@@ -1452,8 +1260,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV4AIRPORT
             nullable: true
             sourceColumnReferences:
@@ -1466,8 +1272,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV4AIRPORTID
             nullable: true
             sourceColumnReferences:
@@ -1480,8 +1284,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV4AIRPORTSEQID
             nullable: true
             sourceColumnReferences:
@@ -1494,8 +1296,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV4WHEELSON
             nullable: true
             sourceColumnReferences:
@@ -1508,8 +1308,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV4TOTALGTIME
             nullable: true
             sourceColumnReferences:
@@ -1522,8 +1320,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV4LONGESTGTIME
             nullable: true
             sourceColumnReferences:
@@ -1536,8 +1332,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV4WHEELSOFF
             nullable: true
             sourceColumnReferences:
@@ -1550,8 +1344,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV4TAILNUM
             nullable: true
             sourceColumnReferences:
@@ -1564,8 +1356,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV5AIRPORT
             nullable: true
             sourceColumnReferences:
@@ -1578,8 +1368,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV5AIRPORTID
             nullable: true
             sourceColumnReferences:
@@ -1592,8 +1380,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV5AIRPORTSEQID
             nullable: true
             sourceColumnReferences:
@@ -1606,8 +1392,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV5WHEELSON
             nullable: true
             sourceColumnReferences:
@@ -1620,8 +1404,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV5TOTALGTIME
             nullable: true
             sourceColumnReferences:
@@ -1634,8 +1416,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV5LONGESTGTIME
             nullable: true
             sourceColumnReferences:
@@ -1648,8 +1428,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV5WHEELSOFF
             nullable: true
             sourceColumnReferences:
@@ -1662,8 +1440,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DIV5TAILNUM
             nullable: true
             sourceColumnReferences:
@@ -1676,8 +1452,6 @@ steps:
               stepCounter: "149"
             dataType: VARCHAR(10)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: DUPLICATE
             nullable: true
             sourceColumnReferences:
@@ -1685,19 +1459,86 @@ steps:
                   - columnCounter: 9854
                     stepCounter: "147"
                 transform: ""
-          - columnReference:
-              columnCounter: 9981
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 10105
               stepCounter: "149"
-            dataType: VARCHAR(1)
+            config: {}
+            dataType: STRING
+            defaultValue: ""
             description: ""
-            hashColumns: []
-            hashDetails: null
-            name: XX
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 9867
+                stepCounter: "149"
+              - columnCounter: 9871
+                stepCounter: "149"
+              - columnCounter: 9872
+                stepCounter: "149"
+              - columnCounter: 9885
+                stepCounter: "149"
+              - columnCounter: 9894
+                stepCounter: "149"
+            name: FLIGHT_HK
             nullable: true
             sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 9855
-                    stepCounter: "147"
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 10229
+              stepCounter: "149"
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 9879
+                stepCounter: "149"
+            name: CARRIER_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 10230
+              stepCounter: "149"
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 9879
+                stepCounter: "149"
+              - columnCounter: 9872
+                stepCounter: "149"
+              - columnCounter: 9867
+                stepCounter: "149"
+              - columnCounter: 9885
+                stepCounter: "149"
+              - columnCounter: 9894
+                stepCounter: "149"
+              - columnCounter: 10231
+                stepCounter: "149"
+            name: FLIGHT2CARRIER_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
                 transform: ""
         cteString: ""
         enabledColumnTestIDs: []
