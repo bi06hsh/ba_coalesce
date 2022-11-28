@@ -1,0 +1,106 @@
+steps:
+  SAT_PASSENGER_CITY-141:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: TARGET
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 8969
+              stepCounter: "141"
+            config:
+              isChangeHash: true
+              isHubHash: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PASSENGER_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8899
+                    stepCounter: "131"
+                transform: ""
+          - columnReference:
+              columnCounter: 8972
+              stepCounter: "141"
+            config:
+              isChangeHash: true
+            dataType: VARCHAR(100)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8750
+                    stepCounter: "131"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8975
+              stepCounter: "141"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'2022-11-22'"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8976
+              stepCounter: "141"
+            config:
+              isChangeHash: true
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemRecordSource: true
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'PASSENGER_DATA'"
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: STG_PASSENGER_DATA
+            join:
+              joinCondition: FROM {{ ref('TARGET', 'STG_PASSENGER_DATA') }} "STG_PASSENGER_DATA"
+            name: SAT_PASSENGER_CITY
+            noLinkRefs: []
+      name: SAT_PASSENGER_CITY
+      overrideSQL: false
+      schema: ""
+      sqlType: COALESCE-DATA_VAULT::3
+      type: sql
+    stepCounter: "141"
