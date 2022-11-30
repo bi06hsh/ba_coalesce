@@ -105,7 +105,7 @@ steps:
               stepCounter: "131"
             dataType: TIMESTAMP_NTZ(9)
             description: ""
-            name: LOAD_DATE2
+            name: LOAD_DATE
             nullable: true
             sourceColumnReferences:
               - columnReferences:
@@ -115,7 +115,9 @@ steps:
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - customSQL:
+          - aliases:
+              PASSENGER_DATA: "130"
+            customSQL:
               customSQL: ""
             dependencies:
               - locationName: SRC
