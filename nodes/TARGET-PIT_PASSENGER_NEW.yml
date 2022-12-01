@@ -182,7 +182,11 @@ steps:
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - aliases: {}
+          - aliases:
+              SAT_PASSENGER_CITY: "141"
+              SAT_PASSENGER_MAIL: "142"
+              SAT_PASSENGER_NAME: "140"
+              STG_PASSENGER_DATA: "131"
             customSQL:
               customSQL: ""
             dependencies:
@@ -202,7 +206,7 @@ steps:
                 LEFT JOIN {{ ref('TARGET', 'SAT_PASSENGER_MAIL') }} "SAT_PASSENGER_MAIL"
                 ON (SAT_PASSENGER_MAIL.PASSENGER_ID = STG_PASSENGER_DATA.PASSENGER_ID AND SAT_PASSENGER_MAIL.LOAD_DATE = STG_PASSENGER_DATA.LOAD_DATE)
                 LEFT JOIN {{ ref('TARGET', 'SAT_PASSENGER_CITY') }} "SAT_PASSENGER_CITY"
-                ON (SAT_PASSENGER_CITY.PASSENGER_ID = STG_PASSENGER_DATA.PASSENGER_ID AND SAT_PASSENGER_CITY.LOAD_DATE = STG_PASSENGER_DATA.LOAD_DATE);
+                ON (SAT_PASSENGER_CITY.PASSENGER_ID = STG_PASSENGER_DATA.PASSENGER_ID AND SAT_PASSENGER_CITY.LOAD_DATE = STG_PASSENGER_DATA.LOAD_DATE)
             name: PIT_PASSENGER_NEW
             noLinkRefs: []
       name: PIT_PASSENGER_NEW
