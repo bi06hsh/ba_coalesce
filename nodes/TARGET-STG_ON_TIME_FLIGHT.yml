@@ -1798,7 +1798,7 @@ steps:
                 stepCounter: "92"
               - columnCounter: 6322
                 stepCounter: "92"
-            name: DEST_LINK_HK
+            name: LINK_DESTINATION_HK
             nullable: true
             sourceColumnReferences:
               - columnReferences: []
@@ -1829,7 +1829,7 @@ steps:
                 stepCounter: "92"
               - columnCounter: 6324
                 stepCounter: "92"
-            name: ORIGIN_LINK_HK
+            name: LINK_ORIGIN_HK
             nullable: true
             sourceColumnReferences:
               - columnReferences: []
@@ -1850,7 +1850,7 @@ steps:
             hashedColumns:
               - columnCounter: 6225
                 stepCounter: "92"
-            name: DEST_AIRPORT_HK
+            name: AIRPORT_DESTINATION_HK
             nullable: true
             sourceColumnReferences:
               - columnReferences: []

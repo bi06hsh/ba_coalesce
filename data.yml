@@ -56,9 +56,9 @@ stepTypes:
       defaultStorageLocation: null
       error: null
       nodeMetadataSpec: |
-        capitalized: Copy of Copy of Stage
-        short: STG
-        plural: Stages
+        capitalized: Brigde-Table
+        short: BRG
+        plural: Bridges
         tagColor: '#2EB67D'
 
         config:
@@ -252,7 +252,7 @@ stepTypes:
             		{% endfor %}
             	{% endfor %}
             {% endif %}
-    name: DEFINITIV KEINE STAGE, DIE JETZT EINE BRIGDE IST
+    name: Brigde-Table
     version: 1
   StepType-COALESCE-DATA_VAULT::1:
     id: COALESCE-DATA_VAULT::1

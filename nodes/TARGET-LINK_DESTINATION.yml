@@ -1,5 +1,5 @@
 steps:
-  LINK_DEST-111:
+  LINK_DESTINATION-111:
     operation:
       config:
         insertStrategy: UNION
@@ -26,7 +26,7 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: DEST_LINK_HK
+            name: LINK_DESTINATION_HK
             nullable: true
             sourceColumnReferences:
               - columnReferences:
@@ -40,7 +40,7 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: DEST_AIRPORT_HK
+            name: AIRPORT_DESTINATION_HK
             nullable: true
             sourceColumnReferences:
               - columnReferences:
@@ -103,9 +103,9 @@ steps:
                 nodeName: STG_ON_TIME_FLIGHT
             join:
               joinCondition: FROM {{ ref('TARGET', 'STG_ON_TIME_FLIGHT') }} "STG_ON_TIME_FLIGHT"
-            name: LINK_DEST
+            name: LINK_DESTINATION
             noLinkRefs: []
-      name: LINK_DEST
+      name: LINK_DESTINATION
       overrideSQL: false
       schema: ""
       sqlType: COALESCE-DATA_VAULT::2
