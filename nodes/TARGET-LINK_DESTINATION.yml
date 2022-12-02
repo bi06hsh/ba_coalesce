@@ -1,5 +1,5 @@
 steps:
-  LINK_FLIGHT2CARRIER_MULTISOURCE-154:
+  LINK_DESTINATION-111:
     operation:
       config:
         insertStrategy: UNION
@@ -18,24 +18,38 @@ steps:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 10494
-              stepCounter: "154"
+              columnCounter: 8011
+              stepCounter: "111"
             config:
               isLinkHash: true
             dataType: STRING
             description: ""
             hashColumns: []
             hashDetails: null
-            name: FLIGHT2CARRIER_HK
+            name: LINK_DESTINATION_HK
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 10485
-                    stepCounter: "153"
+                  - columnCounter: 6321
+                    stepCounter: "92"
                 transform: ""
           - columnReference:
-              columnCounter: 10492
-              stepCounter: "154"
+              columnCounter: 8013
+              stepCounter: "111"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AIRPORT_DESTINATION_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6325
+                    stepCounter: "92"
+                transform: ""
+          - columnReference:
+              columnCounter: 8007
+              stepCounter: "111"
             dataType: STRING
             description: ""
             hashColumns: []
@@ -44,44 +58,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 10482
-                    stepCounter: "153"
-                transform: ""
-          - columnReference:
-              columnCounter: 10493
-              stepCounter: "154"
-            dataType: STRING
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: CARRIER_HK
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 10484
-                    stepCounter: "153"
-                transform: ""
-          - columnReference:
-              columnCounter: 10496
-              stepCounter: "154"
-            dataType: STRING
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: RECORD_SOURCE
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 10491
-                    stepCounter: "153"
+                  - columnCounter: 6316
+                    stepCounter: "92"
                 transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 10497
-              stepCounter: "154"
+              columnCounter: 8015
+              stepCounter: "111"
             config: {}
             dataType: TIMESTAMP
             defaultValue: ""
@@ -93,23 +79,35 @@ steps:
             sourceColumnReferences:
               - columnReferences: []
                 transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - columnReference:
+              columnCounter: 8005
+              stepCounter: "111"
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6314
+                    stepCounter: "92"
+                transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - aliases:
-              STG_ON_TIME_FLIGHT_MULTISOURCE: "153"
-            customSQL:
+          - customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
-                nodeName: STG_ON_TIME_FLIGHT_MULTISOURCE
+                nodeName: STG_ON_TIME_FLIGHT
             join:
-              joinCondition: FROM {{ ref('TARGET', 'STG_ON_TIME_FLIGHT_MULTISOURCE') }} "STG_ON_TIME_FLIGHT_MULTISOURCE"
-            name: LINK_FLIGHT2CARRIER_MULTISOURCE
+              joinCondition: FROM {{ ref('TARGET', 'STG_ON_TIME_FLIGHT') }} "STG_ON_TIME_FLIGHT"
+            name: LINK_DESTINATION
             noLinkRefs: []
-      name: LINK_FLIGHT2CARRIER_MULTISOURCE
+      name: LINK_DESTINATION
       overrideSQL: false
       schema: ""
       sqlType: COALESCE-DATA_VAULT::2
       type: sql
-    stepCounter: "154"
+    stepCounter: "111"

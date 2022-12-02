@@ -96,7 +96,9 @@ steps:
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - customSQL:
+          - aliases:
+              STG_L_CARRIER: "90"
+            customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET

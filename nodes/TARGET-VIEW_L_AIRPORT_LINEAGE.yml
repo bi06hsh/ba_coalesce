@@ -1,5 +1,5 @@
 steps:
-  STG_L_AIRPORT_LINEAGE_2-120:
+  VIEW_L_AIRPORT_LINEAGE-120:
     operation:
       config:
         insertStrategy: INSERT
@@ -15,7 +15,7 @@ steps:
       isMultisource: false
       locationID: ""
       locationName: TARGET
-      materializationType: table
+      materializationType: view
       metadata:
         appliedNodeTests: []
         columns:
@@ -108,7 +108,7 @@ steps:
               - columnReferences:
                   - columnCounter: 0
                     stepCounter: "0"
-                transform: TO_VARCHAR(MONTH("STG_L_AIRPORT_LINEAGE"."DATE"))
+                transform: to_varchar(month("STG_L_AIRPORT_LINEAGE"."DATE"))
             systemColumnType: None
             transform: ""
           - acceptedValues:
@@ -186,9 +186,9 @@ steps:
                 nodeName: STG_L_AIRPORT_LINEAGE
             join:
               joinCondition: FROM {{ ref('TARGET', 'STG_L_AIRPORT_LINEAGE') }} "STG_L_AIRPORT_LINEAGE"
-            name: STG_L_AIRPORT_LINEAGE_2
+            name: VIEW_L_AIRPORT_LINEAGE
             noLinkRefs: []
-      name: STG_L_AIRPORT_LINEAGE_2
+      name: VIEW_L_AIRPORT_LINEAGE
       overrideSQL: false
       schema: ""
       sqlType: Stage
