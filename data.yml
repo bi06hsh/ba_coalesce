@@ -56,9 +56,9 @@ stepTypes:
       defaultStorageLocation: null
       error: null
       nodeMetadataSpec: |
-        capitalized: Brigde-Table
-        short: BRG
-        plural: Bridges
+        capitalized: PIT-Table
+        short: PIT
+        plural: PIT-Tables
         tagColor: '#2EB67D'
 
         config:
@@ -252,7 +252,7 @@ stepTypes:
             		{% endfor %}
             	{% endfor %}
             {% endif %}
-    name: Brigde-Table
+    name: PIT-Table
     version: 1
   StepType-COALESCE-DATA_VAULT::1:
     id: COALESCE-DATA_VAULT::1

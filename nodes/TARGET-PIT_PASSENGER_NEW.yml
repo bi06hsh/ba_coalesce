@@ -212,6 +212,6 @@ steps:
       name: PIT_PASSENGER_NEW
       overrideSQL: false
       schema: ""
-      sqlType: Stage
+      sqlType: "4"
       type: sql
     stepCounter: "209"
