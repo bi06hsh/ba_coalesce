@@ -56,12 +56,12 @@ steps:
               - columnReferences: []
                 transform: ""
               - columnReferences:
-                  - columnCounter: 6086
-                    stepCounter: "89"
+                  - columnCounter: 69141
+                    stepCounter: "300"
                 transform: ""
               - columnReferences:
-                  - columnCounter: 6095
-                    stepCounter: "89"
+                  - columnCounter: 69150
+                    stepCounter: "300"
                 transform: ""
           - appliedColumnTests: {}
             columnReference:
@@ -100,9 +100,9 @@ steps:
                     stepCounter: "0"
                 transform: "'SOURCE_L_AIRPORT'"
               - columnReferences: []
-                transform: "'ON_TIME_FLIGHT'"
+                transform: "'SOURCE_ON_TIME_FLIGHT_PERFORMANCE'"
               - columnReferences: []
-                transform: "'ON_TIME_FLIGHT'"
+                transform: "'SOURCE_ON_TIME_FLIGHT_PERFORMANCE'"
             systemColumnType: None
             transform: ""
         enabledColumnTestIDs: []
@@ -113,43 +113,45 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: SRC
-                nodeName: ON_TIME_FLIGHT
-              - locationName: SRC
                 nodeName: SOURCE_L_AIRPORT
+              - locationName: SRC
+                nodeName: SOURCE_ON_TIME_FLIGHT_PERFORMANCE
             join:
               joinCondition: FROM {{ ref('SRC', 'SOURCE_L_AIRPORT') }} "SOURCE_L_AIRPORT"
             name: STG_L_AIRPORT
             noLinkRefs: []
           - aliases:
-              ON_TIME_FLIGHT: "89"
+              SOURCE_ON_TIME_FLIGHT_PERFORMANCE: "300"
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: SRC
-                nodeName: ON_TIME_FLIGHT
-              - locationName: SRC
                 nodeName: SOURCE_L_AIRPORT
+              - locationName: SRC
+                nodeName: SOURCE_ON_TIME_FLIGHT_PERFORMANCE
             join:
               joinCondition: |-
-                FROM {{ ref('SRC', 'ON_TIME_FLIGHT') }} "ON_TIME_FLIGHT"
+                FROM {{ ref('SRC', 'SOURCE_ON_TIME_FLIGHT_PERFORMANCE') }} "SOURCE_ON_TIME_FLIGHT_PERFORMANCE"
                 WHERE ORIGIN NOT IN (SELECT code FROM {{ ref('SRC', 'SOURCE_L_AIRPORT') }} "SOURCE_L_AIRPORT")
-            name: ON_TIME_FLIGHT_ORIGIN
+            name: SOURCE_ON_TIME_FLIGHT_ORIGIN
             noLinkRefs: []
           - aliases:
-              ON_TIME_FLIGHT: "89"
+              SOURCE_ON_TIME_FLIGHT_PERFORMANCE: "300"
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: SRC
-                nodeName: ON_TIME_FLIGHT
-              - locationName: SRC
                 nodeName: SOURCE_L_AIRPORT
+              - locationName: SRC
+                nodeName: SOURCE_ON_TIME_FLIGHT_PERFORMANCE
             join:
               joinCondition: |-
-                FROM {{ ref('SRC', 'ON_TIME_FLIGHT') }} "ON_TIME_FLIGHT"
-                WHERE DEST NOT IN (SELECT code FROM {{ ref('SRC', 'SOURCE_L_AIRPORT') }} "SOURCE_L_AIRPORT") AND 
-                dest NOT IN (SELECT origin FROM {{ ref('SRC', 'ON_TIME_FLIGHT') }} "ON_TIME_FLIGHT") 
-            name: ON_TIME_FLIGHT_DEST
+                FROM {{ ref('SRC', 'SOURCE_ON_TIME_FLIGHT_PERFORMANCE') }} "SOURCE_ON_TIME_FLIGHT_PERFORMANCE"
+                WHERE DEST NOT IN 
+                (SELECT code FROM {{ ref('SRC', 'SOURCE_L_AIRPORT') }} "SOURCE_L_AIRPORT") AND 
+                dest NOT IN 
+                (SELECT origin FROM {{ ref('SRC', 'SOURCE_ON_TIME_FLIGHT_PERFORMANCE') }} "SOURCE_ON_TIME_FLIGHT_PERFORMANCE") 
+            name: SOURCE_ON_TIME_FLIGHT_ORIGIN
             noLinkRefs: []
       name: STG_L_AIRPORT
       overrideSQL: false
