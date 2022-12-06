@@ -5,6 +5,7 @@ steps:
         insertStrategy: INSERT
         postSQL: ""
         preSQL: ""
+        selectDistinct: false
         testsEnabled: true
         truncateBefore: true
       database: ""
@@ -191,6 +192,6 @@ steps:
       name: VIEW_L_AIRPORT_LINEAGE
       overrideSQL: false
       schema: ""
-      sqlType: Stage
+      sqlType: View
       type: sql
     stepCounter: "120"

@@ -1,5 +1,5 @@
 steps:
-  SAT_AIRPORT-113:
+  SAT_AIRPORT-301:
     operation:
       config:
         postSQL: ""
@@ -17,12 +17,12 @@ steps:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 8026
-              stepCounter: "113"
-            config:
-              isHubHash: true
+              columnCounter: 69238
+              stepCounter: "301"
             dataType: STRING
             description: ""
+            hashColumns: []
+            hashDetails: null
             name: AIRPORT_HK
             nullable: true
             sourceColumnReferences:
@@ -30,33 +30,27 @@ steps:
                   - columnCounter: 6190
                     stepCounter: "91"
                 transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 8032
-              stepCounter: "113"
-            config:
-              isChangeHash: true
-            dataType: STRING
-            defaultValue: ""
+          - columnReference:
+              columnCounter: 69239
+              stepCounter: "301"
+            dataType: VARCHAR(5)
             description: ""
-            hashDetails:
-              hashAlgorithm: SHA1
-            hashedColumns:
-              - columnCounter: 8028
-                stepCounter: "113"
-            name: HASHDIFF
+            hashColumns: []
+            hashDetails: null
+            name: AIRPORT_CODE
             nullable: true
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 6188
+                    stepCounter: "91"
                 transform: ""
           - columnReference:
-              columnCounter: 8028
-              stepCounter: "113"
+              columnCounter: 69240
+              stepCounter: "301"
             dataType: VARCHAR(200)
             description: ""
+            hashColumns: []
+            hashDetails: null
             name: AIRPORT_DESCRIPTION
             nullable: true
             sourceColumnReferences:
@@ -64,28 +58,13 @@ steps:
                   - columnCounter: 6189
                     stepCounter: "91"
                 transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 8030
-              stepCounter: "113"
-            config: {}
-            dataType: TIMESTAMP
-            defaultValue: ""
-            description: ""
-            isSystemCreateDate: true
-            name: LOAD_DATE
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
           - columnReference:
-              columnCounter: 8029
-              stepCounter: "113"
+              columnCounter: 69241
+              stepCounter: "301"
             dataType: VARCHAR(50)
             description: ""
+            hashColumns: []
+            hashDetails: null
             name: RECORD_SOURCE
             nullable: true
             sourceColumnReferences:
@@ -93,10 +72,48 @@ steps:
                   - columnCounter: 6191
                     stepCounter: "91"
                 transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 69242
+              stepCounter: "301"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 69243
+              stepCounter: "301"
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemRecordSource: true
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "''"
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - customSQL:
+          - aliases:
+              STG_L_AIRPORT: "91"
+            customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
@@ -110,4 +127,4 @@ steps:
       schema: ""
       sqlType: COALESCE-DATA_VAULT::3
       type: sql
-    stepCounter: "113"
+    stepCounter: "301"
