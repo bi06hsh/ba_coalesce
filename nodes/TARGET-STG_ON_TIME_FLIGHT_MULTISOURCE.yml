@@ -128,6 +128,8 @@ steps:
             dependencies:
               - locationName: TARGET
                 nodeName: STG_ON_TIME_FLIGHT
+              - locationName: TARGET
+                nodeName: STG_ON_TIME_FLIGHT_EUROPE
             join:
               joinCondition: FROM {{ ref('TARGET', 'STG_ON_TIME_FLIGHT') }} "STG_ON_TIME_FLIGHT"
             name: STG_ON_TIME_FLIGHT
