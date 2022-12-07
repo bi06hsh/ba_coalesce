@@ -1,5 +1,5 @@
 steps:
-  LINK_DESTINATION-111:
+  LINK_DESTINATION-322:
     operation:
       config:
         insertStrategy: UNION
@@ -18,8 +18,8 @@ steps:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 8011
-              stepCounter: "111"
+              columnCounter: 74744
+              stepCounter: "322"
             config:
               isLinkHash: true
             dataType: STRING
@@ -34,8 +34,8 @@ steps:
                     stepCounter: "319"
                 transform: ""
           - columnReference:
-              columnCounter: 8013
-              stepCounter: "111"
+              columnCounter: 74747
+              stepCounter: "322"
             dataType: STRING
             description: ""
             hashColumns: []
@@ -48,8 +48,8 @@ steps:
                     stepCounter: "319"
                 transform: ""
           - columnReference:
-              columnCounter: 8007
-              stepCounter: "111"
+              columnCounter: 74741
+              stepCounter: "322"
             dataType: STRING
             description: ""
             hashColumns: []
@@ -66,8 +66,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 8015
-              stepCounter: "111"
+              columnCounter: 74748
+              stepCounter: "322"
             config: {}
             dataType: TIMESTAMP
             defaultValue: ""
@@ -79,13 +79,19 @@ steps:
             sourceColumnReferences:
               - columnReferences: []
                 transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
-          - columnReference:
-              columnCounter: 8005
-              stepCounter: "111"
-            dataType: VARCHAR(50)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 74749
+              stepCounter: "322"
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
             description: ""
             hashColumns: []
-            hashDetails: null
+            isSystemRecordSource: true
             name: RECORD_SOURCE
             nullable: true
             sourceColumnReferences:
@@ -94,9 +100,7 @@ steps:
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - aliases:
-              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_LINK: "319"
-            customSQL:
+          - customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
@@ -110,4 +114,4 @@ steps:
       schema: ""
       sqlType: COALESCE-DATA_VAULT::2
       type: sql
-    stepCounter: "111"
+    stepCounter: "322"

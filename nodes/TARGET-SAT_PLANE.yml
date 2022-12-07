@@ -27,8 +27,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6317
-                    stepCounter: "92"
+                  - columnCounter: 74872
+                    stepCounter: "323"
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -61,8 +61,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6211
-                    stepCounter: "92"
+                  - columnCounter: 74768
+                    stepCounter: "323"
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -102,14 +102,14 @@ steps:
         enabledColumnTestIDs: []
         sourceMapping:
           - aliases:
-              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT: "92"
+              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES: "323"
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
-                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES
             join:
-              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT"
+              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES"
             name: SAT_PLANE
             noLinkRefs: []
       name: SAT_PLANE

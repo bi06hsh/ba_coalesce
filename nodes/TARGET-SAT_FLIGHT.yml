@@ -27,8 +27,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6316
-                    stepCounter: "92"
+                  - columnCounter: 74871
+                    stepCounter: "323"
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -81,8 +81,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6193
-                    stepCounter: "92"
+                  - columnCounter: 74750
+                    stepCounter: "323"
                 transform: ""
           - columnReference:
               columnCounter: 8169
@@ -93,8 +93,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6194
-                    stepCounter: "92"
+                  - columnCounter: 74751
+                    stepCounter: "323"
                 transform: ""
           - columnReference:
               columnCounter: 8170
@@ -105,8 +105,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6195
-                    stepCounter: "92"
+                  - columnCounter: 74752
+                    stepCounter: "323"
                 transform: ""
           - columnReference:
               columnCounter: 8171
@@ -117,8 +117,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6196
-                    stepCounter: "92"
+                  - columnCounter: 74753
+                    stepCounter: "323"
                 transform: ""
           - columnReference:
               columnCounter: 8172
@@ -129,8 +129,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6197
-                    stepCounter: "92"
+                  - columnCounter: 74754
+                    stepCounter: "323"
                 transform: ""
           - columnReference:
               columnCounter: 8210
@@ -141,8 +141,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6232
-                    stepCounter: "92"
+                  - columnCounter: 74789
+                    stepCounter: "323"
                 transform: ""
           - columnReference:
               columnCounter: 8221
@@ -153,8 +153,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6243
-                    stepCounter: "92"
+                  - columnCounter: 74800
+                    stepCounter: "323"
                 transform: ""
           - columnReference:
               columnCounter: 8227
@@ -165,8 +165,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6249
-                    stepCounter: "92"
+                  - columnCounter: 74806
+                    stepCounter: "323"
                 transform: ""
           - columnReference:
               columnCounter: 8232
@@ -177,8 +177,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6254
-                    stepCounter: "92"
+                  - columnCounter: 74811
+                    stepCounter: "323"
                 transform: ""
           - columnReference:
               columnCounter: 8233
@@ -189,8 +189,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6255
-                    stepCounter: "92"
+                  - columnCounter: 74812
+                    stepCounter: "323"
                 transform: ""
           - columnReference:
               columnCounter: 8234
@@ -201,8 +201,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6256
-                    stepCounter: "92"
+                  - columnCounter: 74813
+                    stepCounter: "323"
                 transform: ""
           - columnReference:
               columnCounter: 8291
@@ -235,14 +235,14 @@ steps:
         enabledColumnTestIDs: []
         sourceMapping:
           - aliases:
-              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT: "92"
+              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES: "323"
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
-                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES
             join:
-              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT"
+              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES"
             name: SAT_FLIGHT
             noLinkRefs: []
       name: SAT_FLIGHT
