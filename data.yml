@@ -506,7 +506,7 @@ stepTypes:
         capitalized: Brigde-Table
         short: BRG
         plural: Bridges
-        tagColor: '#2EB67D'
+        tagColor: '#FF0000'
 
         config:
         - groupName: Options
