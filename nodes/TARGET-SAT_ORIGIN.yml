@@ -27,8 +27,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6326
-                    stepCounter: "92"
+                  - columnCounter: 74881
+                    stepCounter: "323"
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -75,8 +75,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6218
-                    stepCounter: "92"
+                  - columnCounter: 74775
+                    stepCounter: "323"
                 transform: ""
           - columnReference:
               columnCounter: 34475
@@ -87,8 +87,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6213
-                    stepCounter: "92"
+                  - columnCounter: 74770
+                    stepCounter: "323"
                 transform: ""
           - columnReference:
               columnCounter: 34476
@@ -99,8 +99,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6214
-                    stepCounter: "92"
+                  - columnCounter: 74771
+                    stepCounter: "323"
                 transform: ""
           - columnReference:
               columnCounter: 34477
@@ -111,8 +111,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6215
-                    stepCounter: "92"
+                  - columnCounter: 74772
+                    stepCounter: "323"
                 transform: ""
           - columnReference:
               columnCounter: 34480
@@ -123,8 +123,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6217
-                    stepCounter: "92"
+                  - columnCounter: 74774
+                    stepCounter: "323"
                 transform: ""
           - columnReference:
               columnCounter: 34482
@@ -135,8 +135,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6219
-                    stepCounter: "92"
+                  - columnCounter: 74776
+                    stepCounter: "323"
                 transform: ""
           - columnReference:
               columnCounter: 34483
@@ -147,8 +147,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6220
-                    stepCounter: "92"
+                  - columnCounter: 74777
+                    stepCounter: "323"
                 transform: ""
           - columnReference:
               columnCounter: 34484
@@ -159,8 +159,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6221
-                    stepCounter: "92"
+                  - columnCounter: 74778
+                    stepCounter: "323"
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -200,14 +200,14 @@ steps:
         enabledColumnTestIDs: []
         sourceMapping:
           - aliases:
-              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT: "92"
+              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES: "323"
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
-                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES
             join:
-              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT"
+              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES"
             name: SAT_ORIGIN
             noLinkRefs: []
       name: SAT_ORIGIN
