@@ -29,8 +29,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6316
-                    stepCounter: "92"
+                  - columnCounter: 74342
+                    stepCounter: "318"
                 transform: ""
           - columnReference:
               columnCounter: 7337
@@ -43,8 +43,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6198
-                    stepCounter: "92"
+                  - columnCounter: 74226
+                    stepCounter: "318"
                 transform: ""
           - columnReference:
               columnCounter: 7341
@@ -57,8 +57,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6202
-                    stepCounter: "92"
+                  - columnCounter: 74230
+                    stepCounter: "318"
                 transform: ""
           - columnReference:
               columnCounter: 7342
@@ -71,8 +71,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6203
-                    stepCounter: "92"
+                  - columnCounter: 74231
+                    stepCounter: "318"
                 transform: ""
           - columnReference:
               columnCounter: 7356
@@ -85,8 +85,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6216
-                    stepCounter: "92"
+                  - columnCounter: 74244
+                    stepCounter: "318"
                 transform: ""
           - columnReference:
               columnCounter: 7366
@@ -99,8 +99,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6225
-                    stepCounter: "92"
+                  - columnCounter: 74253
+                    stepCounter: "318"
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -130,22 +130,20 @@ steps:
             name: RECORD_SOURCE
             nullable: true
             sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 6314
-                    stepCounter: "92"
+              - columnReferences: []
                 transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - aliases:
-              STG_ON_TIME_FLIGHT_PERFORMANCE: "92"
+              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB: "318"
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
-                nodeName: STG_ON_TIME_FLIGHT_PERFORMANCE
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB
             join:
-              joinCondition: FROM {{ ref('TARGET', 'STG_ON_TIME_FLIGHT_PERFORMANCE') }} "STG_ON_TIME_FLIGHT_PERFORMANCE"
+              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB"
             name: HUB_FLIGHT
             noLinkRefs: []
       name: HUB_FLIGHT

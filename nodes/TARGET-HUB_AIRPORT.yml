@@ -9,7 +9,7 @@ steps:
       deployEnabled: true
       description: ""
       isDataVault: false
-      isMultisource: false
+      isMultisource: true
       locationID: ""
       locationName: TARGET
       materializationType: table
@@ -29,8 +29,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6190
-                    stepCounter: "91"
+                  - columnCounter: 73843
+                    stepCounter: "312"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 74087
+                    stepCounter: "314"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 74088
+                    stepCounter: "314"
                 transform: ""
           - columnReference:
               columnCounter: 6452
@@ -43,8 +51,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6188
-                    stepCounter: "91"
+                  - columnCounter: 73841
+                    stepCounter: "312"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 73990
+                    stepCounter: "314"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 73999
+                    stepCounter: "314"
                 transform: ""
           - columnReference:
               columnCounter: 6454
@@ -56,10 +72,12 @@ steps:
             name: RECORD_SOURCE
             nullable: true
             sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 6191
-                    stepCounter: "91"
-                transform: ""
+              - columnReferences: []
+                transform: "'SOURCE_L_AIRPORT'"
+              - columnReferences: []
+                transform: "'SOURCE_ON_TIME_FLIGHT_PERFORMANCE'"
+              - columnReferences: []
+                transform: "'SOURCE_ON_TIME_FLIGHT_PERFORMANCE'"
           - acceptedValues:
               strictMatch: true
               values: []
@@ -78,17 +96,55 @@ steps:
             sourceColumnReferences:
               - columnReferences: []
                 transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
-        cteString: ""
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         enabledColumnTestIDs: []
         sourceMapping:
-          - customSQL:
+          - aliases:
+              STG_SOURCE_L_AIRPORT: "312"
+            customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
-                nodeName: STG_L_AIRPORT
+                nodeName: STG_SOURCE_L_AIRPORT
+              - locationName: TARGET
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_AIRPORT
             join:
-              joinCondition: FROM {{ ref('TARGET', 'STG_L_AIRPORT') }} "STG_L_AIRPORT"
-            name: HUB_AIRPORT
+              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_L_AIRPORT') }} "STG_SOURCE_L_AIRPORT"
+            name: STG_SOURCE_L_AIRPORT
+            noLinkRefs: []
+          - aliases:
+              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_AIRPORT: "314"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: STG_SOURCE_L_AIRPORT
+              - locationName: TARGET
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_AIRPORT
+            join:
+              joinCondition: |-
+                FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_AIRPORT') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_AIRPORT"
+                WHERE "ORIGIN" NOT IN (SELECT "AIRPORT_CODE" FROM {{ ref('TARGET', 'STG_SOURCE_L_AIRPORT') }} "STG_SOURCE_L_AIRPORT") 
+            name: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_AIRPORT_ORIGIN
+            noLinkRefs: []
+          - aliases:
+              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_AIRPORT: "314"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: STG_SOURCE_L_AIRPORT
+              - locationName: TARGET
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_AIRPORT
+            join:
+              joinCondition: |-
+                FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_AIRPORT') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_AIRPORT"
+                WHERE "DEST" NOT IN (SELECT "AIRPORT_CODE" FROM {{ ref('TARGET', 'STG_SOURCE_L_AIRPORT') }} "STG_SOURCE_L_AIRPORT") AND
+                "DEST" NOT IN (SELECT "ORIGIN" FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_AIRPORT') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_AIRPORT")
+            name: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_AIRPORT_DEST
             noLinkRefs: []
       name: HUB_AIRPORT
       overrideSQL: false

@@ -1,0 +1,1898 @@
+steps:
+  STG_ON_TIME_FLIGHT_PERFORMANCE_SAT-92:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: TARGET
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6193
+              stepCounter: "92"
+            dataType: VARCHAR(4)
+            description: ""
+            name: YEAR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69118
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6194
+              stepCounter: "92"
+            dataType: VARCHAR(1)
+            description: ""
+            name: QUARTER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69119
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6195
+              stepCounter: "92"
+            dataType: VARCHAR(1)
+            description: ""
+            name: MONTH
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69120
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6196
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DAYOFMONTH
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69121
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6197
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DAYOFWEEK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69122
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6198
+              stepCounter: "92"
+            dataType: DATE
+            description: ""
+            name: FLIGHTDATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69123
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6199
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: MARKETING_AIRLINE_NETWORK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69124
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6200
+              stepCounter: "92"
+            dataType: VARCHAR(12)
+            description: ""
+            name: OPERATED_OR_BRANDED_CODE_SHARE_PARTNERS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69125
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6201
+              stepCounter: "92"
+            dataType: VARCHAR(5)
+            description: ""
+            name: DOT_ID_MARKETING_AIRLINE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69126
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6202
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: IATA_CODE_MARKETING_AIRLINE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69127
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6203
+              stepCounter: "92"
+            dataType: VARCHAR(4)
+            description: ""
+            name: FLIGHT_NUMBER_MARKETING_AIRLINE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69128
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6204
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: ORIGINALLY_SCHEDULED_CODE_SHARE_AIRLINE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69129
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6205
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DOT_ID_ORIGINALLY_SCHEDULED_CODE_SHARE_AIRLINE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69130
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6206
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: IATA_CODE_ORIGINALLY_SCHEDULED_CODE_SHARE_AIRLINE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69131
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6207
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: FLIGHT_NUM_ORIGINALLY_SCHEDULED_CODE_SHARE_AIRLINE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69132
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6208
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: OPERATING_AIRLINE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69133
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6209
+              stepCounter: "92"
+            dataType: VARCHAR(5)
+            description: ""
+            name: DOT_ID_OPERATING_AIRLINE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69134
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6210
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: IATA_CODE_OPERATING_AIRLINE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69135
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6319
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: IATA_CODE_OPERATING_AIRLINE_2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69135
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6211
+              stepCounter: "92"
+            dataType: VARCHAR(6)
+            description: ""
+            name: TAIL_NUMBER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69136
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6212
+              stepCounter: "92"
+            dataType: VARCHAR(4)
+            description: ""
+            name: FLIGHT_NUMBER_OPERATING_AIRLINE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69137
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6213
+              stepCounter: "92"
+            dataType: VARCHAR(5)
+            description: ""
+            name: ORIGINAIRPORTID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69138
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6214
+              stepCounter: "92"
+            dataType: VARCHAR(7)
+            description: ""
+            name: ORIGINAIRPORTSEQID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69139
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6215
+              stepCounter: "92"
+            dataType: VARCHAR(5)
+            description: ""
+            name: ORIGINCITYMARKETID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69140
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6216
+              stepCounter: "92"
+            dataType: VARCHAR(3)
+            description: ""
+            name: ORIGIN
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69141
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6324
+              stepCounter: "92"
+            dataType: VARCHAR(3)
+            description: ""
+            name: ORIGIN_2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69141
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6217
+              stepCounter: "92"
+            dataType: VARCHAR(40)
+            description: ""
+            name: ORIGINCITYNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69142
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6218
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: ORIGINSTATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69143
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6219
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: ORIGINSTATEFIPS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69144
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6220
+              stepCounter: "92"
+            dataType: VARCHAR(50)
+            description: ""
+            name: ORIGINSTATENAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69145
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6221
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: ORIGINWAC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69146
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6222
+              stepCounter: "92"
+            dataType: VARCHAR(5)
+            description: ""
+            name: DESTAIRPORTID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69147
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6223
+              stepCounter: "92"
+            dataType: VARCHAR(7)
+            description: ""
+            name: DESTAIRPORTSEQID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69148
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6224
+              stepCounter: "92"
+            dataType: VARCHAR(5)
+            description: ""
+            name: DESTCITYMARKETID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69149
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6225
+              stepCounter: "92"
+            dataType: VARCHAR(3)
+            description: ""
+            name: DEST
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69150
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6322
+              stepCounter: "92"
+            dataType: VARCHAR(3)
+            description: ""
+            name: DEST_2
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69150
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6226
+              stepCounter: "92"
+            dataType: VARCHAR(40)
+            description: ""
+            name: DESTCITYNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69151
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6227
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DESTSTATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69152
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6228
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DESTSTATEFIPS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69153
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6229
+              stepCounter: "92"
+            dataType: VARCHAR(50)
+            description: ""
+            name: DESTSTATENAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69154
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6230
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DESTWAC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69155
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6231
+              stepCounter: "92"
+            dataType: VARCHAR(4)
+            description: ""
+            name: CRSDEPTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69156
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6232
+              stepCounter: "92"
+            dataType: VARCHAR(4)
+            description: ""
+            name: DEPTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69157
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6233
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DEPDELAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69158
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6234
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DEPDELAYMINUTES
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69159
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6235
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DEPDEL15
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69160
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6236
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DEPARTUREDELAYGROUPS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69161
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6237
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DEPTIMEBLK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69162
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6238
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: TAXIOUT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69163
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6239
+              stepCounter: "92"
+            dataType: VARCHAR(4)
+            description: ""
+            name: WHEELSOFF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69164
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6240
+              stepCounter: "92"
+            dataType: VARCHAR(4)
+            description: ""
+            name: WHEELSON
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69165
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6241
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: TAXIIN
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69166
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6242
+              stepCounter: "92"
+            dataType: VARCHAR(4)
+            description: ""
+            name: CRSARRTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69167
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6243
+              stepCounter: "92"
+            dataType: VARCHAR(4)
+            description: ""
+            name: ARRTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69168
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6244
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: ARRDELAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69169
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6245
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: ARRDELAYMINUTES
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69170
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6246
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: ARRDEL15
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69171
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6247
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: ARRIVALDELAYGROUPS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69172
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6248
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: ARRTIMEBLK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69173
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6249
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: CANCELLED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69174
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6250
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: CANCELLATIONCODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69175
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6251
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIVERTED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69176
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6252
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: CRSELAPSEDTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69177
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6253
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: ACTUALELAPSEDTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69178
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6254
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: AIRTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69179
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6255
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: FLIGHTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69180
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6256
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DISTANCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69181
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6257
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DISTANCEGROUP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69182
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6258
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: CARRIERDELAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69183
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6259
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: WEATHERDELAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69184
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6260
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: NASDELAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69185
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6261
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: SECURITYDELAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69186
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6262
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: LATEAIRCRAFTDELAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69187
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6263
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: FIRSTDEPTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69188
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6264
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: TOTALADDGTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69189
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6265
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: LONGESTADDGTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69190
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6266
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIVAIRPORTLANDINGS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69191
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6267
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIVREACHEDDEST
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69192
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6268
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIVACTUALELAPSEDTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69193
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6269
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIVARRDELAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69194
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6270
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIVDISTANCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69195
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6271
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV1AIRPORT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69196
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6272
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV1AIRPORTID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69197
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6273
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV1AIRPORTSEQID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69198
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6274
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV1WHEELSON
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69199
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6275
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV1TOTALGTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69200
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6276
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV1LONGESTGTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69201
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6277
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV1WHEELSOFF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69202
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6278
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV1TAILNUM
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69203
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6279
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV2AIRPORT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69204
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6280
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV2AIRPORTID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69205
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6281
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV2AIRPORTSEQID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69206
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6282
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV2WHEELSON
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69207
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6283
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV2TOTALGTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69208
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6284
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV2LONGESTGTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69209
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6285
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV2WHEELSOFF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69210
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6286
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV2TAILNUM
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69211
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6287
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV3AIRPORT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69212
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6288
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV3AIRPORTID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69213
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6289
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV3AIRPORTSEQID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69214
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6290
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV3WHEELSON
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69215
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6291
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV3TOTALGTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69216
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6292
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV3LONGESTGTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69217
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6293
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV3WHEELSOFF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69218
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6294
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV3TAILNUM
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69219
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6295
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV4AIRPORT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69220
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6296
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV4AIRPORTID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69221
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6297
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV4AIRPORTSEQID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69222
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6298
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV4WHEELSON
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69223
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6299
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV4TOTALGTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69224
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6300
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV4LONGESTGTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69225
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6301
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV4WHEELSOFF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69226
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6302
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV4TAILNUM
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69227
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6303
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV5AIRPORT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69228
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6304
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV5AIRPORTID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69229
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6305
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV5AIRPORTSEQID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69230
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6306
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV5WHEELSON
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69231
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6307
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV5TOTALGTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69232
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6308
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV5LONGESTGTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69233
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6309
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV5WHEELSOFF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69234
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6310
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DIV5TAILNUM
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69235
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6311
+              stepCounter: "92"
+            dataType: VARCHAR(10)
+            description: ""
+            name: DUPLICATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69236
+                    stepCounter: "300"
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6312
+              stepCounter: "92"
+            dataType: VARCHAR(1)
+            description: ""
+            name: XX
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 69237
+                    stepCounter: "300"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6314
+              stepCounter: "92"
+            config: {}
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0
+                    stepCounter: "0"
+                transform: "'SOURCE_ON_TIME_FLIGHT_PERFORMANCE'"
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6315
+              stepCounter: "92"
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 6202
+                stepCounter: "92"
+              - columnCounter: 6203
+                stepCounter: "92"
+              - columnCounter: 6198
+                stepCounter: "92"
+              - columnCounter: 6216
+                stepCounter: "92"
+              - columnCounter: 6225
+                stepCounter: "92"
+              - columnCounter: 6211
+                stepCounter: "92"
+            name: FLIGHT2PLANE_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6316
+              stepCounter: "92"
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 6202
+                stepCounter: "92"
+              - columnCounter: 6203
+                stepCounter: "92"
+              - columnCounter: 6198
+                stepCounter: "92"
+              - columnCounter: 6216
+                stepCounter: "92"
+              - columnCounter: 6225
+                stepCounter: "92"
+            name: FLIGHT_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6317
+              stepCounter: "92"
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 6211
+                stepCounter: "92"
+            name: PLANE_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6318
+              stepCounter: "92"
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: 6202
+                stepCounter: "92"
+            name: CARRIER_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6320
+              stepCounter: "92"
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 6210
+                stepCounter: "92"
+              - columnCounter: 6203
+                stepCounter: "92"
+              - columnCounter: 6198
+                stepCounter: "92"
+              - columnCounter: 6216
+                stepCounter: "92"
+              - columnCounter: 6225
+                stepCounter: "92"
+              - columnCounter: 6319
+                stepCounter: "92"
+            name: FLIGHT2CARRIER_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6321
+              stepCounter: "92"
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 6225
+                stepCounter: "92"
+              - columnCounter: 6202
+                stepCounter: "92"
+              - columnCounter: 6198
+                stepCounter: "92"
+              - columnCounter: 6203
+                stepCounter: "92"
+              - columnCounter: 6216
+                stepCounter: "92"
+              - columnCounter: 6322
+                stepCounter: "92"
+            name: LINK_DESTINATION_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6323
+              stepCounter: "92"
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 6216
+                stepCounter: "92"
+              - columnCounter: 6202
+                stepCounter: "92"
+              - columnCounter: 6198
+                stepCounter: "92"
+              - columnCounter: 6203
+                stepCounter: "92"
+              - columnCounter: 6225
+                stepCounter: "92"
+              - columnCounter: 6324
+                stepCounter: "92"
+            name: LINK_ORIGIN_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6325
+              stepCounter: "92"
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 6225
+                stepCounter: "92"
+            name: AIRPORT_DESTINATION_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6326
+              stepCounter: "92"
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 6216
+                stepCounter: "92"
+            name: ORIGIN_AIRPORT_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              SOURCE_ON_TIME_FLIGHT_PERFORMANCE: "300"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SRC
+                nodeName: SOURCE_ON_TIME_FLIGHT_PERFORMANCE
+            join:
+              joinCondition: FROM {{ ref('SRC', 'SOURCE_ON_TIME_FLIGHT_PERFORMANCE') }} "SOURCE_ON_TIME_FLIGHT_PERFORMANCE"
+            name: STG_ON_TIME_FLIGHT_PERFORMANCE_SAT
+            noLinkRefs: []
+      name: STG_ON_TIME_FLIGHT_PERFORMANCE_SAT
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: "92"

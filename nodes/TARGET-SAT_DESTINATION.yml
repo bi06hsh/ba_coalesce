@@ -195,19 +195,19 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences: []
-                transform: "'ON_TIME_FLIGHT'"
+                transform: "'SOURCE_ON_TIME_FLIGHT_PERFORMANCE'"
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - aliases:
-              STG_ON_TIME_FLIGHT_PERFORMANCE: "92"
+              STG_ON_TIME_FLIGHT_PERFORMANCE_SAT: "92"
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
-                nodeName: STG_ON_TIME_FLIGHT_PERFORMANCE
+                nodeName: STG_ON_TIME_FLIGHT_PERFORMANCE_SAT
             join:
-              joinCondition: FROM {{ ref('TARGET', 'STG_ON_TIME_FLIGHT_PERFORMANCE') }} "STG_ON_TIME_FLIGHT_PERFORMANCE"
+              joinCondition: FROM {{ ref('TARGET', 'STG_ON_TIME_FLIGHT_PERFORMANCE_SAT') }} "STG_ON_TIME_FLIGHT_PERFORMANCE_SAT"
             name: SAT_DESTINATION
             noLinkRefs: []
       name: SAT_DESTINATION
