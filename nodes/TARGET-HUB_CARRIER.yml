@@ -1,0 +1,133 @@
+steps:
+  HUB_CARRIER-334:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationID: ""
+      locationName: TARGET
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 75386
+              stepCounter: "334"
+            config:
+              isHubHash: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CARRIER_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 75264
+                    stepCounter: "332"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 75385
+                    stepCounter: "333"
+                transform: ""
+          - columnReference:
+              columnCounter: 75387
+              stepCounter: "334"
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CARRIER_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 75262
+                    stepCounter: "332"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 75274
+                    stepCounter: "333"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 75389
+              stepCounter: "334"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 75390
+              stepCounter: "334"
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemRecordSource: true
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SOURCE_L_CARRIER'"
+              - columnReferences: []
+                transform: "'SOURCE_ON_TIME_FLIGHT_PERFORMANCE'"
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              STG_SOURCE_L_CARRIER: "332"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: STG_SOURCE_L_CARRIER
+              - locationName: TARGET
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_CARRIER
+            join:
+              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_L_CARRIER') }} "STG_SOURCE_L_CARRIER"
+            name: STG_SOURCE_L_CARRIER
+            noLinkRefs: []
+          - aliases:
+              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_CARRIER: "333"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: STG_SOURCE_L_CARRIER
+              - locationName: TARGET
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_CARRIER
+            join:
+              joinCondition: |-
+                FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_CARRIER') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_CARRIER"
+                WHERE "IATA_CODE_MARKETING_AIRLINE" NOT IN 
+                (SELECT "CARRIER_CODE" FROM {{ ref('TARGET', 'STG_SOURCE_L_CARRIER') }} "STG_SOURCE_L_CARRIER")
+            name: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE
+            noLinkRefs: []
+      name: HUB_CARRIER
+      overrideSQL: false
+      schema: ""
+      sqlType: COALESCE-DATA_VAULT::1
+      type: sql
+    stepCounter: "334"
