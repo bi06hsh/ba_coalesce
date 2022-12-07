@@ -28,8 +28,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75397
-                    stepCounter: "336"
+                  - columnCounter: 154621
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77188
@@ -40,8 +40,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75398
-                    stepCounter: "336"
+                  - columnCounter: 154622
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77189
@@ -52,8 +52,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75399
-                    stepCounter: "336"
+                  - columnCounter: 154623
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77190
@@ -64,8 +64,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75400
-                    stepCounter: "336"
+                  - columnCounter: 154624
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77191
@@ -76,8 +76,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75401
-                    stepCounter: "336"
+                  - columnCounter: 154625
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77192
@@ -88,8 +88,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75402
-                    stepCounter: "336"
+                  - columnCounter: 154626
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77193
@@ -100,8 +100,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75403
-                    stepCounter: "336"
+                  - columnCounter: 154627
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77194
@@ -112,8 +112,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75404
-                    stepCounter: "336"
+                  - columnCounter: 154628
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77195
@@ -124,8 +124,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75405
-                    stepCounter: "336"
+                  - columnCounter: 154629
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77196
@@ -136,8 +136,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75406
-                    stepCounter: "336"
+                  - columnCounter: 154630
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77197
@@ -160,8 +160,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75407
-                    stepCounter: "336"
+                  - columnCounter: 154631
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77199
@@ -172,8 +172,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75408
-                    stepCounter: "336"
+                  - columnCounter: 154632
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77200
@@ -184,8 +184,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75409
-                    stepCounter: "336"
+                  - columnCounter: 154633
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77201
@@ -196,8 +196,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75410
-                    stepCounter: "336"
+                  - columnCounter: 154634
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77202
@@ -208,8 +208,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75411
-                    stepCounter: "336"
+                  - columnCounter: 154635
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77203
@@ -220,8 +220,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75412
-                    stepCounter: "336"
+                  - columnCounter: 154636
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77204
@@ -232,8 +232,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75413
-                    stepCounter: "336"
+                  - columnCounter: 154637
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77205
@@ -244,8 +244,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75414
-                    stepCounter: "336"
+                  - columnCounter: 154638
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77206
@@ -256,8 +256,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75415
-                    stepCounter: "336"
+                  - columnCounter: 154639
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77207
@@ -268,8 +268,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75416
-                    stepCounter: "336"
+                  - columnCounter: 154640
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77208
@@ -280,8 +280,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75417
-                    stepCounter: "336"
+                  - columnCounter: 154641
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77209
@@ -292,8 +292,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75418
-                    stepCounter: "336"
+                  - columnCounter: 154642
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77210
@@ -304,8 +304,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75419
-                    stepCounter: "336"
+                  - columnCounter: 154643
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77211
@@ -316,8 +316,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75420
-                    stepCounter: "336"
+                  - columnCounter: 154644
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77212
@@ -340,8 +340,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75421
-                    stepCounter: "336"
+                  - columnCounter: 154645
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77214
@@ -352,8 +352,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75422
-                    stepCounter: "336"
+                  - columnCounter: 154646
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77215
@@ -364,8 +364,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75423
-                    stepCounter: "336"
+                  - columnCounter: 154647
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77216
@@ -376,8 +376,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75424
-                    stepCounter: "336"
+                  - columnCounter: 154648
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77217
@@ -388,8 +388,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75425
-                    stepCounter: "336"
+                  - columnCounter: 154649
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77218
@@ -400,8 +400,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75426
-                    stepCounter: "336"
+                  - columnCounter: 154650
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77219
@@ -412,8 +412,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75427
-                    stepCounter: "336"
+                  - columnCounter: 154651
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77220
@@ -424,8 +424,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75428
-                    stepCounter: "336"
+                  - columnCounter: 154652
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77221
@@ -436,8 +436,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75429
-                    stepCounter: "336"
+                  - columnCounter: 154653
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77222
@@ -460,8 +460,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75430
-                    stepCounter: "336"
+                  - columnCounter: 154654
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77224
@@ -472,8 +472,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75431
-                    stepCounter: "336"
+                  - columnCounter: 154655
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77225
@@ -484,8 +484,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75432
-                    stepCounter: "336"
+                  - columnCounter: 154656
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77226
@@ -496,8 +496,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75433
-                    stepCounter: "336"
+                  - columnCounter: 154657
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77227
@@ -508,8 +508,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75434
-                    stepCounter: "336"
+                  - columnCounter: 154658
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77228
@@ -520,8 +520,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75435
-                    stepCounter: "336"
+                  - columnCounter: 154659
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77229
@@ -532,8 +532,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75436
-                    stepCounter: "336"
+                  - columnCounter: 154660
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77230
@@ -544,8 +544,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75437
-                    stepCounter: "336"
+                  - columnCounter: 154661
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77231
@@ -556,8 +556,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75438
-                    stepCounter: "336"
+                  - columnCounter: 154662
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77232
@@ -568,8 +568,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75439
-                    stepCounter: "336"
+                  - columnCounter: 154663
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77233
@@ -580,8 +580,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75440
-                    stepCounter: "336"
+                  - columnCounter: 154664
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77234
@@ -592,8 +592,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75441
-                    stepCounter: "336"
+                  - columnCounter: 154665
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77235
@@ -604,8 +604,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75442
-                    stepCounter: "336"
+                  - columnCounter: 154666
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77236
@@ -616,8 +616,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75443
-                    stepCounter: "336"
+                  - columnCounter: 154667
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77237
@@ -628,8 +628,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75444
-                    stepCounter: "336"
+                  - columnCounter: 154668
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77238
@@ -640,8 +640,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75445
-                    stepCounter: "336"
+                  - columnCounter: 154669
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77239
@@ -652,8 +652,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75446
-                    stepCounter: "336"
+                  - columnCounter: 154670
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77240
@@ -664,8 +664,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75447
-                    stepCounter: "336"
+                  - columnCounter: 154671
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77241
@@ -676,8 +676,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75448
-                    stepCounter: "336"
+                  - columnCounter: 154672
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77242
@@ -688,8 +688,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75449
-                    stepCounter: "336"
+                  - columnCounter: 154673
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77243
@@ -700,8 +700,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75450
-                    stepCounter: "336"
+                  - columnCounter: 154674
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77244
@@ -712,8 +712,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75451
-                    stepCounter: "336"
+                  - columnCounter: 154675
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77245
@@ -724,8 +724,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75452
-                    stepCounter: "336"
+                  - columnCounter: 154676
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77246
@@ -736,8 +736,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75453
-                    stepCounter: "336"
+                  - columnCounter: 154677
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77247
@@ -748,8 +748,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75454
-                    stepCounter: "336"
+                  - columnCounter: 154678
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77248
@@ -760,8 +760,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75455
-                    stepCounter: "336"
+                  - columnCounter: 154679
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77249
@@ -772,8 +772,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75456
-                    stepCounter: "336"
+                  - columnCounter: 154680
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77250
@@ -784,8 +784,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75457
-                    stepCounter: "336"
+                  - columnCounter: 154681
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77251
@@ -796,8 +796,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75458
-                    stepCounter: "336"
+                  - columnCounter: 154682
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77252
@@ -808,8 +808,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75459
-                    stepCounter: "336"
+                  - columnCounter: 154683
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77253
@@ -820,8 +820,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75460
-                    stepCounter: "336"
+                  - columnCounter: 154684
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77254
@@ -832,8 +832,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75461
-                    stepCounter: "336"
+                  - columnCounter: 154685
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77255
@@ -844,8 +844,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75462
-                    stepCounter: "336"
+                  - columnCounter: 154686
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77256
@@ -856,8 +856,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75463
-                    stepCounter: "336"
+                  - columnCounter: 154687
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77257
@@ -868,8 +868,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75464
-                    stepCounter: "336"
+                  - columnCounter: 154688
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77258
@@ -880,8 +880,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75465
-                    stepCounter: "336"
+                  - columnCounter: 154689
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77259
@@ -892,8 +892,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75466
-                    stepCounter: "336"
+                  - columnCounter: 154690
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77260
@@ -904,8 +904,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75467
-                    stepCounter: "336"
+                  - columnCounter: 154691
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77261
@@ -916,8 +916,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75468
-                    stepCounter: "336"
+                  - columnCounter: 154692
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77262
@@ -928,8 +928,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75469
-                    stepCounter: "336"
+                  - columnCounter: 154693
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77263
@@ -940,8 +940,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75470
-                    stepCounter: "336"
+                  - columnCounter: 154694
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77264
@@ -952,8 +952,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75471
-                    stepCounter: "336"
+                  - columnCounter: 154695
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77265
@@ -964,8 +964,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75472
-                    stepCounter: "336"
+                  - columnCounter: 154696
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77266
@@ -976,8 +976,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75473
-                    stepCounter: "336"
+                  - columnCounter: 154697
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77267
@@ -988,8 +988,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75474
-                    stepCounter: "336"
+                  - columnCounter: 154698
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77268
@@ -1000,8 +1000,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75475
-                    stepCounter: "336"
+                  - columnCounter: 154699
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77269
@@ -1012,8 +1012,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75476
-                    stepCounter: "336"
+                  - columnCounter: 154700
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77270
@@ -1024,8 +1024,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75477
-                    stepCounter: "336"
+                  - columnCounter: 154701
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77271
@@ -1036,8 +1036,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75478
-                    stepCounter: "336"
+                  - columnCounter: 154702
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77272
@@ -1048,8 +1048,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75479
-                    stepCounter: "336"
+                  - columnCounter: 154703
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77273
@@ -1060,8 +1060,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75480
-                    stepCounter: "336"
+                  - columnCounter: 154704
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77274
@@ -1072,8 +1072,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75481
-                    stepCounter: "336"
+                  - columnCounter: 154705
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77275
@@ -1084,8 +1084,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75482
-                    stepCounter: "336"
+                  - columnCounter: 154706
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77276
@@ -1096,8 +1096,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75483
-                    stepCounter: "336"
+                  - columnCounter: 154707
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77277
@@ -1108,8 +1108,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75484
-                    stepCounter: "336"
+                  - columnCounter: 154708
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77278
@@ -1120,8 +1120,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75485
-                    stepCounter: "336"
+                  - columnCounter: 154709
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77279
@@ -1132,8 +1132,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75486
-                    stepCounter: "336"
+                  - columnCounter: 154710
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77280
@@ -1144,8 +1144,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75487
-                    stepCounter: "336"
+                  - columnCounter: 154711
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77281
@@ -1156,8 +1156,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75488
-                    stepCounter: "336"
+                  - columnCounter: 154712
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77282
@@ -1168,8 +1168,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75489
-                    stepCounter: "336"
+                  - columnCounter: 154713
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77283
@@ -1180,8 +1180,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75490
-                    stepCounter: "336"
+                  - columnCounter: 154714
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77284
@@ -1192,8 +1192,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75491
-                    stepCounter: "336"
+                  - columnCounter: 154715
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77285
@@ -1204,8 +1204,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75492
-                    stepCounter: "336"
+                  - columnCounter: 154716
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77286
@@ -1216,8 +1216,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75493
-                    stepCounter: "336"
+                  - columnCounter: 154717
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77287
@@ -1228,8 +1228,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75494
-                    stepCounter: "336"
+                  - columnCounter: 154718
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77288
@@ -1240,8 +1240,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75495
-                    stepCounter: "336"
+                  - columnCounter: 154719
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77289
@@ -1252,8 +1252,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75496
-                    stepCounter: "336"
+                  - columnCounter: 154720
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77290
@@ -1264,8 +1264,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75497
-                    stepCounter: "336"
+                  - columnCounter: 154721
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77291
@@ -1276,8 +1276,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75498
-                    stepCounter: "336"
+                  - columnCounter: 154722
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77292
@@ -1288,8 +1288,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75499
-                    stepCounter: "336"
+                  - columnCounter: 154723
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77293
@@ -1300,8 +1300,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75500
-                    stepCounter: "336"
+                  - columnCounter: 154724
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77294
@@ -1312,8 +1312,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75501
-                    stepCounter: "336"
+                  - columnCounter: 154725
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77295
@@ -1324,8 +1324,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75502
-                    stepCounter: "336"
+                  - columnCounter: 154726
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77296
@@ -1336,8 +1336,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75503
-                    stepCounter: "336"
+                  - columnCounter: 154727
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77297
@@ -1348,8 +1348,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75504
-                    stepCounter: "336"
+                  - columnCounter: 154728
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77298
@@ -1360,8 +1360,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75505
-                    stepCounter: "336"
+                  - columnCounter: 154729
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77299
@@ -1372,8 +1372,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75506
-                    stepCounter: "336"
+                  - columnCounter: 154730
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77300
@@ -1384,8 +1384,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75507
-                    stepCounter: "336"
+                  - columnCounter: 154731
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77301
@@ -1396,8 +1396,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75508
-                    stepCounter: "336"
+                  - columnCounter: 154732
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77302
@@ -1408,8 +1408,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75509
-                    stepCounter: "336"
+                  - columnCounter: 154733
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77303
@@ -1420,8 +1420,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75510
-                    stepCounter: "336"
+                  - columnCounter: 154734
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77304
@@ -1432,8 +1432,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75511
-                    stepCounter: "336"
+                  - columnCounter: 154735
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77305
@@ -1444,8 +1444,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75512
-                    stepCounter: "336"
+                  - columnCounter: 154736
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77306
@@ -1456,8 +1456,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75513
-                    stepCounter: "336"
+                  - columnCounter: 154737
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77307
@@ -1468,8 +1468,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75514
-                    stepCounter: "336"
+                  - columnCounter: 154738
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77308
@@ -1480,8 +1480,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75515
-                    stepCounter: "336"
+                  - columnCounter: 154739
+                    stepCounter: "5978"
                 transform: ""
           - columnReference:
               columnCounter: 77309
@@ -1492,8 +1492,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 75516
-                    stepCounter: "336"
+                  - columnCounter: 154740
+                    stepCounter: "5978"
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -1735,13 +1735,15 @@ steps:
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - customSQL:
+          - aliases:
+              SOURCE_ON_TIME_FLIGHT_PERFORMANCE_OTFP: "5978"
+            customSQL:
               customSQL: ""
             dependencies:
               - locationName: SRC
-                nodeName: SOURCE_ON_TIME_FLIGHT_PERFORMANCE
+                nodeName: SOURCE_ON_TIME_FLIGHT_PERFORMANCE_OTFP
             join:
-              joinCondition: FROM {{ ref('SRC', 'SOURCE_ON_TIME_FLIGHT_PERFORMANCE') }} "SOURCE_ON_TIME_FLIGHT_PERFORMANCE"
+              joinCondition: FROM {{ ref('SRC', 'SOURCE_ON_TIME_FLIGHT_PERFORMANCE_OTFP') }} "SOURCE_ON_TIME_FLIGHT_PERFORMANCE_OTFP"
             name: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT
             noLinkRefs: []
       name: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT
