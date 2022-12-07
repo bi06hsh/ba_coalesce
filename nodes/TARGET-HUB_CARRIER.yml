@@ -104,23 +104,23 @@ steps:
               - locationName: TARGET
                 nodeName: STG_SOURCE_L_CARRIER
               - locationName: TARGET
-                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_CARRIER
             join:
               joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_L_CARRIER') }} "STG_SOURCE_L_CARRIER"
             name: STG_SOURCE_L_CARRIER
             noLinkRefs: []
           - aliases:
-              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE: "333"
+              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_CARRIER: "333"
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
                 nodeName: STG_SOURCE_L_CARRIER
               - locationName: TARGET
-                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_CARRIER
             join:
               joinCondition: |-
-                FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE"
+                FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_CARRIER') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_CARRIER"
                 WHERE "IATA_CODE_MARKETING_AIRLINE" NOT IN 
                 (SELECT "CARRIER_CODE" FROM {{ ref('TARGET', 'STG_SOURCE_L_CARRIER') }} "STG_SOURCE_L_CARRIER")
             name: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE
