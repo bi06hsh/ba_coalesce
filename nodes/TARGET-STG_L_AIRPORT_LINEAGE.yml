@@ -30,8 +30,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6059
-                    stepCounter: "87"
+                  - columnCounter: 69114
+                    stepCounter: "298"
                 transform: ""
           - columnReference:
               columnCounter: 8320
@@ -44,8 +44,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6060
-                    stepCounter: "87"
+                  - columnCounter: 69115
+                    stepCounter: "298"
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -93,14 +93,14 @@ steps:
         enabledColumnTestIDs: []
         sourceMapping:
           - aliases:
-              L_AIRPORT: "87"
+              SOURCE_L_AIRPORT: "298"
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: SRC
-                nodeName: L_AIRPORT
+                nodeName: SOURCE_L_AIRPORT
             join:
-              joinCondition: FROM {{ ref('SRC', 'L_AIRPORT') }} "L_AIRPORT"
+              joinCondition: FROM {{ ref('SRC', 'SOURCE_L_AIRPORT') }} "SOURCE_L_AIRPORT"
             name: STG_L_AIRPORT_LINEAGE
             noLinkRefs: []
       name: STG_L_AIRPORT_LINEAGE

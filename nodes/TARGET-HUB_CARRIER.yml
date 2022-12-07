@@ -9,7 +9,7 @@ steps:
       deployEnabled: true
       description: ""
       isDataVault: false
-      isMultisource: false
+      isMultisource: true
       locationID: ""
       locationName: TARGET
       materializationType: table
@@ -29,8 +29,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6186
-                    stepCounter: "90"
+                  - columnCounter: 74099
+                    stepCounter: "316"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 74220
+                    stepCounter: "317"
                 transform: ""
           - columnReference:
               columnCounter: 7468
@@ -43,8 +47,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6183
-                    stepCounter: "90"
+                  - columnCounter: 74097
+                    stepCounter: "316"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 74117
+                    stepCounter: "317"
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -64,6 +72,8 @@ steps:
             sourceColumnReferences:
               - columnReferences: []
                 transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
           - columnReference:
               columnCounter: 7470
               stepCounter: "107"
@@ -74,21 +84,40 @@ steps:
             name: RECORD_SOURCE
             nullable: true
             sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 6185
-                    stepCounter: "90"
-                transform: ""
-        cteString: ""
+              - columnReferences: []
+                transform: "'SOURCE_L_CARRIER'"
+              - columnReferences: []
+                transform: "'SOURCE_ON_TIME_FLIGHT_PERFORMANCE'"
         enabledColumnTestIDs: []
         sourceMapping:
-          - customSQL:
+          - aliases:
+              STG_SOURCE_L_CARRIER: "316"
+            customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
-                nodeName: STG_L_CARRIER
+                nodeName: STG_SOURCE_L_CARRIER
+              - locationName: TARGET
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_CARRIER
             join:
-              joinCondition: FROM {{ ref('TARGET', 'STG_L_CARRIER') }} "STG_L_CARRIER"
-            name: HUB_CARRIER
+              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_L_CARRIER') }} "STG_SOURCE_L_CARRIER"
+            name: STG_SOURCE_L_CARRIER
+            noLinkRefs: []
+          - aliases:
+              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_CARRIER: "317"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: STG_SOURCE_L_CARRIER
+              - locationName: TARGET
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_CARRIER
+            join:
+              joinCondition: |-
+                FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_CARRIER') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_CARRIER"
+                WHERE "IATA_CODE_MARKETING_AIRLINE" NOT IN 
+                (SELECT "CARRIER_CODE" FROM {{ ref('TARGET', 'STG_SOURCE_L_CARRIER') }} "STG_SOURCE_L_CARRIER")
+            name: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB_CARRIER
             noLinkRefs: []
       name: HUB_CARRIER
       overrideSQL: false

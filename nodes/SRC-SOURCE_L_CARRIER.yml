@@ -1,5 +1,5 @@
 steps:
-  L_CARRIER-88:
+  SOURCE_L_CARRIER-299:
     operation:
       database: ""
       dataset: ""
@@ -13,8 +13,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 6061
-              stepCounter: 88
+              columnCounter: 69116
+              stepCounter: 299
             config: {}
             dataType: VARCHAR(10)
             defaultValue: ""
@@ -28,8 +28,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 6062
-              stepCounter: 88
+              columnCounter: 69117
+              stepCounter: 299
             config: {}
             dataType: VARCHAR(200)
             defaultValue: ""
@@ -39,10 +39,10 @@ steps:
             primaryKey: false
             uniqueKey: false
         join:
-          joinCondition: FROM {{ ref('SRC', 'L_CARRIER') }}
-      name: L_CARRIER
+          joinCondition: FROM {{ ref('SRC', 'SOURCE_L_CARRIER') }}
+      name: SOURCE_L_CARRIER
       schema: ""
       sqlType: Source
-      table: L_CARRIER
+      table: SOURCE_L_CARRIER
       type: sourceInput
-    stepCounter: "88"
+    stepCounter: "299"

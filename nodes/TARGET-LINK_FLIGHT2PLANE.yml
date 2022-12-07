@@ -30,8 +30,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6315
-                    stepCounter: "92"
+                  - columnCounter: 74468
+                    stepCounter: "319"
                 transform: ""
           - columnReference:
               columnCounter: 7735
@@ -44,8 +44,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6316
-                    stepCounter: "92"
+                  - columnCounter: 74466
+                    stepCounter: "319"
                 transform: ""
           - columnReference:
               columnCounter: 7736
@@ -58,8 +58,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6317
-                    stepCounter: "92"
+                  - columnCounter: 74467
+                    stepCounter: "319"
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -89,20 +89,20 @@ steps:
             name: RECORD_SOURCE
             nullable: true
             sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 6314
-                    stepCounter: "92"
-                transform: ""
+              - columnReferences: []
+                transform: "'SOURCE_ON_TIME_FLIGHT_PERFORMANCE'"
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - customSQL:
+          - aliases:
+              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_LINK: "319"
+            customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
-                nodeName: STG_ON_TIME_FLIGHT
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_LINK
             join:
-              joinCondition: FROM {{ ref('TARGET', 'STG_ON_TIME_FLIGHT') }} "STG_ON_TIME_FLIGHT"
+              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_LINK') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_LINK"
             name: LINK_FLIGHT2PLANE
             noLinkRefs: []
       name: LINK_FLIGHT2PLANE

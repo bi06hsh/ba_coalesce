@@ -1,5 +1,5 @@
 steps:
-  SAT_AIRPORT-113:
+  SAT_AIRPORT-301:
     operation:
       config:
         postSQL: ""
@@ -17,8 +17,8 @@ steps:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 8026
-              stepCounter: "113"
+              columnCounter: 69238
+              stepCounter: "301"
             config:
               isHubHash: true
             dataType: STRING
@@ -27,50 +27,60 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6190
-                    stepCounter: "91"
+                  - columnCounter: 73843
+                    stepCounter: "312"
                 transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 8032
-              stepCounter: "113"
+              columnCounter: 74095
+              stepCounter: "301"
             config:
               isChangeHash: true
             dataType: STRING
             defaultValue: ""
             description: ""
             hashDetails:
-              hashAlgorithm: SHA1
+              hashAlgorithm: MD5
             hashedColumns:
-              - columnCounter: 8028
-                stepCounter: "113"
+              - columnCounter: 69240
+                stepCounter: "301"
             name: HASHDIFF
             nullable: true
             sourceColumnReferences:
               - columnReferences: []
                 transform: ""
           - columnReference:
-              columnCounter: 8028
-              stepCounter: "113"
+              columnCounter: 69240
+              stepCounter: "301"
             dataType: VARCHAR(200)
             description: ""
             name: AIRPORT_DESCRIPTION
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6189
-                    stepCounter: "91"
+                  - columnCounter: 73842
+                    stepCounter: "312"
                 transform: ""
+          - columnReference:
+              columnCounter: 69241
+              stepCounter: "301"
+            dataType: VARCHAR(50)
+            description: ""
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SOURCE_L_AIRPORT'"
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 8030
-              stepCounter: "113"
+              columnCounter: 69242
+              stepCounter: "301"
             config: {}
             dataType: TIMESTAMP
             defaultValue: ""
@@ -81,28 +91,18 @@ steps:
             sourceColumnReferences:
               - columnReferences: []
                 transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
-          - columnReference:
-              columnCounter: 8029
-              stepCounter: "113"
-            dataType: VARCHAR(50)
-            description: ""
-            name: RECORD_SOURCE
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 6191
-                    stepCounter: "91"
-                transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - customSQL:
+          - aliases:
+              STG_SOURCE_L_AIRPORT: "312"
+            customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
-                nodeName: STG_L_AIRPORT
+                nodeName: STG_SOURCE_L_AIRPORT
             join:
-              joinCondition: FROM {{ ref('TARGET', 'STG_L_AIRPORT') }} "STG_L_AIRPORT"
+              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_L_AIRPORT') }} "STG_SOURCE_L_AIRPORT"
             name: SAT_AIRPORT
             noLinkRefs: []
       name: SAT_AIRPORT
@@ -110,4 +110,4 @@ steps:
       schema: ""
       sqlType: COALESCE-DATA_VAULT::3
       type: sql
-    stepCounter: "113"
+    stepCounter: "301"

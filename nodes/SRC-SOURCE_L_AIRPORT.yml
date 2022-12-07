@@ -1,5 +1,5 @@
 steps:
-  L_AIRPORT-87:
+  SOURCE_L_AIRPORT-298:
     operation:
       database: ""
       dataset: ""
@@ -13,10 +13,10 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 6059
-              stepCounter: 87
+              columnCounter: 69114
+              stepCounter: 298
             config: {}
-            dataType: VARCHAR(5)
+            dataType: VARCHAR(10)
             defaultValue: ""
             description: ""
             name: CODE
@@ -28,8 +28,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 6060
-              stepCounter: 87
+              columnCounter: 69115
+              stepCounter: 298
             config: {}
             dataType: VARCHAR(200)
             defaultValue: ""
@@ -39,10 +39,10 @@ steps:
             primaryKey: false
             uniqueKey: false
         join:
-          joinCondition: FROM {{ ref('SRC', 'L_AIRPORT') }}
-      name: L_AIRPORT
+          joinCondition: FROM {{ ref('SRC', 'SOURCE_L_AIRPORT') }}
+      name: SOURCE_L_AIRPORT
       schema: ""
       sqlType: Source
-      table: L_AIRPORT
+      table: SOURCE_L_AIRPORT
       type: sourceInput
-    stepCounter: "87"
+    stepCounter: "298"
