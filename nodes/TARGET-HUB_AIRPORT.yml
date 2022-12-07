@@ -115,39 +115,41 @@ steps:
             dependencies:
               - locationName: TARGET
                 nodeName: STG_SOURCE_L_AIRPORT
+              - locationName: TARGET
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_AIRPORT
             join:
               joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_L_AIRPORT') }} "STG_SOURCE_L_AIRPORT"
             name: STG_SOURCE_L_AIRPORT
             noLinkRefs: []
           - aliases:
-              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE: "327"
+              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_AIRPORT: "327"
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
                 nodeName: STG_SOURCE_L_AIRPORT
               - locationName: TARGET
-                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_AIRPORT
             join:
               joinCondition: |-
-                FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE"
+                FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_AIRPORT') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_AIRPORT"
                 WHERE "ORIGIN" NOT IN (SELECT "AIRPORT_CODE" FROM {{ ref('TARGET', 'STG_SOURCE_L_AIRPORT') }} "STG_SOURCE_L_AIRPORT") 
             name: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_ORIGIN
             noLinkRefs: []
           - aliases:
-              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE: "327"
+              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_AIRPORT: "327"
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
                 nodeName: STG_SOURCE_L_AIRPORT
               - locationName: TARGET
-                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_AIRPORT
             join:
               joinCondition: |-
-                FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE"
+                FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_AIRPORT') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_AIRPORT"
                 WHERE "DEST" NOT IN (SELECT "AIRPORT_CODE" FROM {{ ref('TARGET', 'STG_SOURCE_L_AIRPORT') }} "STG_SOURCE_L_AIRPORT") AND
-                "DEST" NOT IN (SELECT "ORIGIN" FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE")
+                "DEST" NOT IN (SELECT "ORIGIN" FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_AIRPORT') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_AIRPORT")
             name: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_DEST
             noLinkRefs: []
       name: HUB_AIRPORT

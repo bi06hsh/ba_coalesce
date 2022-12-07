@@ -1,5 +1,5 @@
 steps:
-  STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE-327:
+  STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_AIRPORT-327:
     operation:
       config:
         insertStrategy: INSERT
@@ -1511,9 +1511,9 @@ steps:
                 nodeName: SOURCE_ON_TIME_FLIGHT_PERFORMANCE
             join:
               joinCondition: FROM {{ ref('SRC', 'SOURCE_ON_TIME_FLIGHT_PERFORMANCE') }} "SOURCE_ON_TIME_FLIGHT_PERFORMANCE"
-            name: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE
+            name: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_AIRPORT
             noLinkRefs: []
-      name: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE
+      name: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_AIRPORT
       overrideSQL: false
       schema: ""
       sqlType: Stage
