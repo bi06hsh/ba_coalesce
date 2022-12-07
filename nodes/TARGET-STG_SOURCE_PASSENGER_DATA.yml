@@ -1,5 +1,5 @@
 steps:
-  STG_PASSENGER_DATA-131:
+  STG_SOURCE_PASSENGER_DATA-131:
     operation:
       config:
         insertStrategy: INSERT
@@ -28,8 +28,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 8741
-                    stepCounter: "130"
+                  - columnCounter: 74476
+                    stepCounter: "320"
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -61,8 +61,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 8742
-                    stepCounter: "130"
+                  - columnCounter: 74477
+                    stepCounter: "320"
                 transform: ""
           - columnReference:
               columnCounter: 8749
@@ -73,8 +73,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 8743
-                    stepCounter: "130"
+                  - columnCounter: 74478
+                    stepCounter: "320"
                 transform: ""
           - columnReference:
               columnCounter: 8750
@@ -85,8 +85,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 8744
-                    stepCounter: "130"
+                  - columnCounter: 74479
+                    stepCounter: "320"
                 transform: ""
           - columnReference:
               columnCounter: 8751
@@ -97,8 +97,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 8745
-                    stepCounter: "130"
+                  - columnCounter: 74480
+                    stepCounter: "320"
                 transform: ""
           - columnReference:
               columnCounter: 8752
@@ -109,24 +109,24 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 8746
-                    stepCounter: "130"
+                  - columnCounter: 74481
+                    stepCounter: "320"
                 transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - aliases:
-              PASSENGER_DATA: "130"
+              SOURCE_PASSENGER_DATA: "320"
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: SRC
-                nodeName: PASSENGER_DATA
+                nodeName: SOURCE_PASSENGER_DATA
             join:
-              joinCondition: FROM {{ ref('SRC', 'PASSENGER_DATA') }} "PASSENGER_DATA"
-            name: STG_PASSENGER_DATA
+              joinCondition: FROM {{ ref('SRC', 'SOURCE_PASSENGER_DATA') }} "SOURCE_PASSENGER_DATA"
+            name: STG_SOURCE_PASSENGER_DATA
             noLinkRefs: []
-      name: STG_PASSENGER_DATA
+      name: STG_SOURCE_PASSENGER_DATA
       overrideSQL: false
       schema: ""
       sqlType: Stage

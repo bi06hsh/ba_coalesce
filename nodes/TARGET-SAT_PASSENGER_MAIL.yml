@@ -83,20 +83,20 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences: []
-                transform: "'PASSENGER_DATA'"
+                transform: "'SOURCE_PASSENGER_DATA'"
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - aliases:
-              STG_PASSENGER_DATA: "131"
+              STG_SOURCE_PASSENGER_DATA: "131"
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
-                nodeName: STG_PASSENGER_DATA
+                nodeName: STG_SOURCE_PASSENGER_DATA
             join:
               joinCondition: |
-                FROM {{ ref('TARGET', 'STG_PASSENGER_DATA') }} "STG_PASSENGER_DATA"
+                FROM {{ ref('TARGET', 'STG_SOURCE_PASSENGER_DATA') }} "STG_SOURCE_PASSENGER_DATA"
             name: SAT_PASSENGER_MAIL
             noLinkRefs: []
       name: SAT_PASSENGER_MAIL
