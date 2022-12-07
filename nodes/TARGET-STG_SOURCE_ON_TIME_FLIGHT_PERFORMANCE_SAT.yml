@@ -1869,7 +1869,7 @@ steps:
             hashDetails:
               hashAlgorithm: MD5
             hashedColumns:
-              - columnCounter: 6216
+              - columnCounter: 6323
                 stepCounter: "92"
             name: ORIGIN_AIRPORT_HK
             nullable: true
