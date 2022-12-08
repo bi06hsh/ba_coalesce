@@ -3483,5 +3483,13 @@ stepTypes:
             {% endif %}
     name: Persistent Stage
     version: 1
-subgraphs: {}
+subgraphs:
+  Subgraph-3:
+    id: 3
+    name: Hubs
+    steps:
+      - "96"
+      - "107"
+      - "106"
+      - "105"
 version: 1
