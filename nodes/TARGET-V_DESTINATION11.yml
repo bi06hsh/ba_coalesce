@@ -1,0 +1,204 @@
+steps:
+  V_DESTINATION11-6061:
+    operation:
+      config:
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: TARGET
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 157226
+              stepCounter: "6061"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AIRPORT_DESTINATION_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 155606
+                    stepCounter: "6015"
+                transform: ""
+          - columnReference:
+              columnCounter: 157227
+              stepCounter: "6061"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HASHDIFF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 155607
+                    stepCounter: "6015"
+                transform: ""
+          - columnReference:
+              columnCounter: 157228
+              stepCounter: "6061"
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DESTSTATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 155608
+                    stepCounter: "6015"
+                transform: ""
+          - columnReference:
+              columnCounter: 157229
+              stepCounter: "6061"
+            dataType: VARCHAR(5)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DESTAIRPORTID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 155609
+                    stepCounter: "6015"
+                transform: ""
+          - columnReference:
+              columnCounter: 157230
+              stepCounter: "6061"
+            dataType: VARCHAR(7)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DESTAIRPORTSEQID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 155610
+                    stepCounter: "6015"
+                transform: ""
+          - columnReference:
+              columnCounter: 157231
+              stepCounter: "6061"
+            dataType: VARCHAR(5)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DESTCITYMARKETID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 155611
+                    stepCounter: "6015"
+                transform: ""
+          - columnReference:
+              columnCounter: 157232
+              stepCounter: "6061"
+            dataType: VARCHAR(40)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DESTCITYNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 155612
+                    stepCounter: "6015"
+                transform: ""
+          - columnReference:
+              columnCounter: 157233
+              stepCounter: "6061"
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DESTSTATEFIPS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 155613
+                    stepCounter: "6015"
+                transform: ""
+          - columnReference:
+              columnCounter: 157234
+              stepCounter: "6061"
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DESTSTATENAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 155614
+                    stepCounter: "6015"
+                transform: ""
+          - columnReference:
+              columnCounter: 157235
+              stepCounter: "6061"
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DESTWAC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 155615
+                    stepCounter: "6015"
+                transform: ""
+          - columnReference:
+              columnCounter: 157236
+              stepCounter: "6061"
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 155616
+                    stepCounter: "6015"
+                transform: ""
+          - columnReference:
+              columnCounter: 157237
+              stepCounter: "6061"
+            dataType: VARCHAR
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 155617
+                    stepCounter: "6015"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: SAT_DESTINATION11
+            join:
+              joinCondition: FROM {{ ref('TARGET', 'SAT_DESTINATION11') }} "SAT_DESTINATION11"
+            name: V_DESTINATION11
+            noLinkRefs: []
+      name: V_DESTINATION11
+      overrideSQL: false
+      schema: ""
+      sqlType: View
+      type: sql
+    stepCounter: "6061"

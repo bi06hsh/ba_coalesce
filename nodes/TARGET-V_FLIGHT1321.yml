@@ -1,0 +1,246 @@
+steps:
+  V_FLIGHT1321-6627:
+    operation:
+      config:
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: TARGET
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 163023
+              stepCounter: "6627"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FLIGHT_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159493
+                    stepCounter: "6259"
+                transform: ""
+          - columnReference:
+              columnCounter: 163024
+              stepCounter: "6627"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HASHDIFF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159494
+                    stepCounter: "6259"
+                transform: ""
+          - columnReference:
+              columnCounter: 163025
+              stepCounter: "6627"
+            dataType: VARCHAR(4)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: YEAR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159495
+                    stepCounter: "6259"
+                transform: ""
+          - columnReference:
+              columnCounter: 163026
+              stepCounter: "6627"
+            dataType: VARCHAR(1)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: QUARTER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159496
+                    stepCounter: "6259"
+                transform: ""
+          - columnReference:
+              columnCounter: 163027
+              stepCounter: "6627"
+            dataType: VARCHAR(1)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MONTH
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159497
+                    stepCounter: "6259"
+                transform: ""
+          - columnReference:
+              columnCounter: 163028
+              stepCounter: "6627"
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DAYOFMONTH
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159498
+                    stepCounter: "6259"
+                transform: ""
+          - columnReference:
+              columnCounter: 163029
+              stepCounter: "6627"
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DAYOFWEEK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159499
+                    stepCounter: "6259"
+                transform: ""
+          - columnReference:
+              columnCounter: 163030
+              stepCounter: "6627"
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FLIGHTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159500
+                    stepCounter: "6259"
+                transform: ""
+          - columnReference:
+              columnCounter: 163031
+              stepCounter: "6627"
+            dataType: VARCHAR(4)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DEPTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159501
+                    stepCounter: "6259"
+                transform: ""
+          - columnReference:
+              columnCounter: 163032
+              stepCounter: "6627"
+            dataType: VARCHAR(4)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ARRTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159502
+                    stepCounter: "6259"
+                transform: ""
+          - columnReference:
+              columnCounter: 163033
+              stepCounter: "6627"
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AIRTIME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159503
+                    stepCounter: "6259"
+                transform: ""
+          - columnReference:
+              columnCounter: 163034
+              stepCounter: "6627"
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DISTANCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159504
+                    stepCounter: "6259"
+                transform: ""
+          - columnReference:
+              columnCounter: 163035
+              stepCounter: "6627"
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CANCELLED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159505
+                    stepCounter: "6259"
+                transform: ""
+          - columnReference:
+              columnCounter: 163036
+              stepCounter: "6627"
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159506
+                    stepCounter: "6259"
+                transform: ""
+          - columnReference:
+              columnCounter: 163037
+              stepCounter: "6627"
+            dataType: VARCHAR
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159507
+                    stepCounter: "6259"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: V_FLIGHT132
+            join:
+              joinCondition: FROM {{ ref('TARGET', 'V_FLIGHT132') }} "V_FLIGHT132"
+            name: V_FLIGHT1321
+            noLinkRefs: []
+      name: V_FLIGHT1321
+      overrideSQL: false
+      schema: ""
+      sqlType: View
+      type: sql
+    stepCounter: "6627"

@@ -1,0 +1,148 @@
+steps:
+  V_FLIGHT313-6477:
+    operation:
+      config:
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: TARGET
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 161950
+              stepCounter: "6477"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FLIGHT_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 157578
+                    stepCounter: "6109"
+                transform: ""
+          - columnReference:
+              columnCounter: 161951
+              stepCounter: "6477"
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FLIGHTDATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 157579
+                    stepCounter: "6109"
+                transform: ""
+          - columnReference:
+              columnCounter: 161952
+              stepCounter: "6477"
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: IATA_CODE_MARKETING_AIRLINE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 157580
+                    stepCounter: "6109"
+                transform: ""
+          - columnReference:
+              columnCounter: 161953
+              stepCounter: "6477"
+            dataType: VARCHAR(4)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FLIGHT_NUMBER_MARKETING_AIRLINE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 157581
+                    stepCounter: "6109"
+                transform: ""
+          - columnReference:
+              columnCounter: 161954
+              stepCounter: "6477"
+            dataType: VARCHAR(3)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORIGIN
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 157582
+                    stepCounter: "6109"
+                transform: ""
+          - columnReference:
+              columnCounter: 161955
+              stepCounter: "6477"
+            dataType: VARCHAR(3)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DEST
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 157583
+                    stepCounter: "6109"
+                transform: ""
+          - columnReference:
+              columnCounter: 161956
+              stepCounter: "6477"
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 157584
+                    stepCounter: "6109"
+                transform: ""
+          - columnReference:
+              columnCounter: 161957
+              stepCounter: "6477"
+            dataType: VARCHAR
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 157585
+                    stepCounter: "6109"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: V_FLIGHT31
+            join:
+              joinCondition: FROM {{ ref('TARGET', 'V_FLIGHT31') }} "V_FLIGHT31"
+            name: V_FLIGHT313
+            noLinkRefs: []
+      name: V_FLIGHT313
+      overrideSQL: false
+      schema: ""
+      sqlType: View
+      type: sql
+    stepCounter: "6477"

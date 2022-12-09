@@ -1,0 +1,204 @@
+steps:
+  V_ORIGIN11113-6934:
+    operation:
+      config:
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: TARGET
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 165282
+              stepCounter: "6934"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AIRPORT_ORIGIN_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159064
+                    stepCounter: "6198"
+                transform: ""
+          - columnReference:
+              columnCounter: 165283
+              stepCounter: "6934"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HASHDIFF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159065
+                    stepCounter: "6198"
+                transform: ""
+          - columnReference:
+              columnCounter: 165284
+              stepCounter: "6934"
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORIGINSTATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159066
+                    stepCounter: "6198"
+                transform: ""
+          - columnReference:
+              columnCounter: 165285
+              stepCounter: "6934"
+            dataType: VARCHAR(5)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORIGINAIRPORTID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159067
+                    stepCounter: "6198"
+                transform: ""
+          - columnReference:
+              columnCounter: 165286
+              stepCounter: "6934"
+            dataType: VARCHAR(7)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORIGINAIRPORTSEQID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159068
+                    stepCounter: "6198"
+                transform: ""
+          - columnReference:
+              columnCounter: 165287
+              stepCounter: "6934"
+            dataType: VARCHAR(5)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORIGINCITYMARKETID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159069
+                    stepCounter: "6198"
+                transform: ""
+          - columnReference:
+              columnCounter: 165288
+              stepCounter: "6934"
+            dataType: VARCHAR(40)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORIGINCITYNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159070
+                    stepCounter: "6198"
+                transform: ""
+          - columnReference:
+              columnCounter: 165289
+              stepCounter: "6934"
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORIGINSTATEFIPS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159071
+                    stepCounter: "6198"
+                transform: ""
+          - columnReference:
+              columnCounter: 165290
+              stepCounter: "6934"
+            dataType: VARCHAR(50)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORIGINSTATENAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159072
+                    stepCounter: "6198"
+                transform: ""
+          - columnReference:
+              columnCounter: 165291
+              stepCounter: "6934"
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORIGINWAC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159073
+                    stepCounter: "6198"
+                transform: ""
+          - columnReference:
+              columnCounter: 165292
+              stepCounter: "6934"
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159074
+                    stepCounter: "6198"
+                transform: ""
+          - columnReference:
+              columnCounter: 165293
+              stepCounter: "6934"
+            dataType: VARCHAR
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159075
+                    stepCounter: "6198"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: V_ORIGIN1111
+            join:
+              joinCondition: FROM {{ ref('TARGET', 'V_ORIGIN1111') }} "V_ORIGIN1111"
+            name: V_ORIGIN11113
+            noLinkRefs: []
+      name: V_ORIGIN11113
+      overrideSQL: false
+      schema: ""
+      sqlType: View
+      type: sql
+    stepCounter: "6934"
