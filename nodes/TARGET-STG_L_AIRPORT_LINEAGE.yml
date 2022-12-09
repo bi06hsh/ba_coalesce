@@ -1,5 +1,5 @@
 steps:
-  STG_SOURCE_L_AIRPORT_LINEAGE-119:
+  STG_L_AIRPORT_LINEAGE-119:
     operation:
       config:
         insertStrategy: INSERT
@@ -30,8 +30,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 69114
-                    stepCounter: "298"
+                  - columnCounter: 169372
+                    stepCounter: "7494"
                 transform: ""
           - columnReference:
               columnCounter: 8320
@@ -44,8 +44,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 69115
-                    stepCounter: "298"
+                  - columnCounter: 169373
+                    stepCounter: "7494"
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -93,17 +93,17 @@ steps:
         enabledColumnTestIDs: []
         sourceMapping:
           - aliases:
-              SOURCE_L_AIRPORT: "298"
+              L_AIRPORT: "7494"
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: SRC
-                nodeName: SOURCE_L_AIRPORT
+                nodeName: L_AIRPORT
             join:
-              joinCondition: FROM {{ ref('SRC', 'SOURCE_L_AIRPORT') }} "SOURCE_L_AIRPORT"
-            name: STG_SOURCE_L_AIRPORT_LINEAGE
+              joinCondition: FROM {{ ref('SRC', 'L_AIRPORT') }} "L_AIRPORT"
+            name: STG_L_AIRPORT_LINEAGE
             noLinkRefs: []
-      name: STG_SOURCE_L_AIRPORT_LINEAGE
+      name: STG_L_AIRPORT_LINEAGE
       overrideSQL: false
       schema: ""
       sqlType: Stage

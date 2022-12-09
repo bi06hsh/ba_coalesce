@@ -88,7 +88,7 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences: []
-                transform: to_varchar(year("STG_SOURCE_L_AIRPORT_LINEAGE"."DATE"))
+                transform: to_varchar(year("STG_L_AIRPORT_LINEAGE"."DATE"))
             systemColumnType: None
             transform: ""
           - acceptedValues:
@@ -109,7 +109,7 @@ steps:
               - columnReferences:
                   - columnCounter: 0
                     stepCounter: "0"
-                transform: to_varchar(month("STG_SOURCE_L_AIRPORT_LINEAGE"."DATE"))
+                transform: to_varchar(month("STG_L_AIRPORT_LINEAGE"."DATE"))
             systemColumnType: None
             transform: ""
           - acceptedValues:
@@ -130,7 +130,7 @@ steps:
               - columnReferences:
                   - columnCounter: 0
                     stepCounter: "0"
-                transform: to_varchar(day("STG_SOURCE_L_AIRPORT_LINEAGE"."DATE"))
+                transform: to_varchar(day("STG_L_AIRPORT_LINEAGE"."DATE"))
             systemColumnType: None
             transform: ""
           - acceptedValues:
@@ -151,7 +151,7 @@ steps:
               - columnReferences:
                   - columnCounter: 0
                     stepCounter: "0"
-                transform: SUBSTRING("STG_SOURCE_L_AIRPORT_LINEAGE"."USER",0,CHARINDEX('_',"STG_SOURCE_L_AIRPORT_LINEAGE"."USER")-1)
+                transform: SUBSTRING("STG_L_AIRPORT_LINEAGE"."USER",0,CHARINDEX('_',"STG_L_AIRPORT_LINEAGE"."USER")-1)
             systemColumnType: None
             transform: ""
           - acceptedValues:
@@ -172,21 +172,21 @@ steps:
               - columnReferences:
                   - columnCounter: 0
                     stepCounter: "0"
-                transform: SUBSTRING("STG_SOURCE_L_AIRPORT_LINEAGE"."USER",CHARINDEX('_',"STG_SOURCE_L_AIRPORT_LINEAGE"."USER")+1,LEN("STG_SOURCE_L_AIRPORT_LINEAGE"."USER")-1)
+                transform: SUBSTRING("STG_L_AIRPORT_LINEAGE"."USER",CHARINDEX('_',"STG_L_AIRPORT_LINEAGE"."USER")+1,LEN("STG_L_AIRPORT_LINEAGE"."USER")-1)
             systemColumnType: None
             transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - aliases:
-              STG_SOURCE_L_AIRPORT_LINEAGE: "119"
+              STG_L_AIRPORT_LINEAGE: "119"
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
-                nodeName: STG_SOURCE_L_AIRPORT_LINEAGE
+                nodeName: STG_L_AIRPORT_LINEAGE
             join:
-              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_L_AIRPORT_LINEAGE') }} "STG_SOURCE_L_AIRPORT_LINEAGE"
+              joinCondition: FROM {{ ref('TARGET', 'STG_L_AIRPORT_LINEAGE') }} "STG_L_AIRPORT_LINEAGE"
             name: VIEW_L_AIRPORT_LINEAGE
             noLinkRefs: []
       name: VIEW_L_AIRPORT_LINEAGE
