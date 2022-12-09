@@ -1,5 +1,5 @@
 steps:
-  LNK_LINK_FLIGHT2CARRIER1-5999:
+  LNK_LINK_FLIGHT2CARRIER1-6009:
     operation:
       config:
         insertStrategy: UNION
@@ -18,8 +18,8 @@ steps:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 155483
-              stepCounter: "5999"
+              columnCounter: 155559
+              stepCounter: "6009"
             config:
               isLinkHash: true
             dataType: STRING
@@ -34,8 +34,8 @@ steps:
                     stepCounter: "342"
                 transform: ""
           - columnReference:
-              columnCounter: 155484
-              stepCounter: "5999"
+              columnCounter: 155560
+              stepCounter: "6009"
             dataType: STRING
             description: ""
             hashColumns: []
@@ -48,8 +48,8 @@ steps:
                     stepCounter: "342"
                 transform: ""
           - columnReference:
-              columnCounter: 155485
-              stepCounter: "5999"
+              columnCounter: 155561
+              stepCounter: "6009"
             dataType: STRING
             description: ""
             hashColumns: []
@@ -66,8 +66,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 155486
-              stepCounter: "5999"
+              columnCounter: 155562
+              stepCounter: "6009"
             config: {}
             dataType: TIMESTAMP
             defaultValue: ""
@@ -84,8 +84,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 155487
-              stepCounter: "5999"
+              columnCounter: 155563
+              stepCounter: "6009"
             config: {}
             dataType: VARCHAR
             defaultValue: ""
@@ -114,4 +114,4 @@ steps:
       schema: ""
       sqlType: COALESCE-DATA_VAULT::2
       type: sql
-    stepCounter: "5999"
+    stepCounter: "6009"

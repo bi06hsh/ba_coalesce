@@ -1,10 +1,9 @@
 steps:
-  LNK_LINK_DESTINATION1-6011:
+  V_LINK_DESTINATION12311-7497:
     operation:
       config:
         insertStrategy: UNION
-        postSQL: ""
-        preSQL: ""
+        selectDistinct: false
       database: ""
       dependencies: []
       deployEnabled: true
@@ -13,15 +12,13 @@ steps:
       isMultisource: false
       locationID: ""
       locationName: TARGET
-      materializationType: table
+      materializationType: view
       metadata:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 155569
-              stepCounter: "6011"
-            config:
-              isLinkHash: true
+              columnCounter: 169384
+              stepCounter: "7497"
             dataType: STRING
             description: ""
             hashColumns: []
@@ -30,12 +27,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 76260
-                    stepCounter: "342"
+                  - columnCounter: 162905
+                    stepCounter: "6609"
                 transform: ""
           - columnReference:
-              columnCounter: 155570
-              stepCounter: "6011"
+              columnCounter: 169385
+              stepCounter: "7497"
             dataType: STRING
             description: ""
             hashColumns: []
@@ -44,12 +41,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 76262
-                    stepCounter: "342"
+                  - columnCounter: 162906
+                    stepCounter: "6609"
                 transform: ""
           - columnReference:
-              columnCounter: 155571
-              stepCounter: "6011"
+              columnCounter: 169386
+              stepCounter: "7497"
             dataType: STRING
             description: ""
             hashColumns: []
@@ -58,45 +55,37 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 76255
-                    stepCounter: "342"
+                  - columnCounter: 162907
+                    stepCounter: "6609"
                 transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 155572
-              stepCounter: "6011"
-            config: {}
+          - columnReference:
+              columnCounter: 169387
+              stepCounter: "7497"
             dataType: TIMESTAMP
-            defaultValue: ""
             description: ""
             hashColumns: []
-            isSystemCreateDate: true
+            hashDetails: null
             name: LOAD_DATE
             nullable: true
             sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 155573
-              stepCounter: "6011"
-            config: {}
+              - columnReferences:
+                  - columnCounter: 162908
+                    stepCounter: "6609"
+                transform: ""
+          - columnReference:
+              columnCounter: 169388
+              stepCounter: "7497"
             dataType: VARCHAR
-            defaultValue: ""
             description: ""
             hashColumns: []
-            isSystemRecordSource: true
+            hashDetails: null
             name: RECORD_SOURCE
             nullable: true
             sourceColumnReferences:
-              - columnReferences: []
-                transform: "'SOURCE_ON_TIME_FLIGHT_PERFORMANCE'"
+              - columnReferences:
+                  - columnCounter: 162909
+                    stepCounter: "6609"
+                transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
@@ -104,14 +93,14 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: TARGET
-                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_LINK
+                nodeName: V_LINK_DESTINATION1231
             join:
-              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_LINK') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_LINK"
-            name: LINK_DESTINATION
+              joinCondition: FROM {{ ref('TARGET', 'V_LINK_DESTINATION1231') }} "V_LINK_DESTINATION1231"
+            name: V_LINK_DESTINATION12311
             noLinkRefs: []
-      name: LNK_LINK_DESTINATION1
+      name: V_LINK_DESTINATION12311
       overrideSQL: false
       schema: ""
-      sqlType: COALESCE-DATA_VAULT::2
+      sqlType: View
       type: sql
-    stepCounter: "6011"
+    stepCounter: "7497"
