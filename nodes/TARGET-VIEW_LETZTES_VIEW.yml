@@ -1,5 +1,5 @@
 steps:
-  V_LINK_FLIGHT2PLANE1232-6974:
+  VIEW_LETZTES_VIEW-6974:
     operation:
       config:
         insertStrategy: UNION
@@ -96,9 +96,9 @@ steps:
                 nodeName: V_LINK_FLIGHT2PLANE123
             join:
               joinCondition: FROM {{ ref('TARGET', 'V_LINK_FLIGHT2PLANE123') }} "V_LINK_FLIGHT2PLANE123"
-            name: V_LINK_FLIGHT2PLANE1232
+            name: VIEW_LETZTES_VIEW
             noLinkRefs: []
-      name: V_LINK_FLIGHT2PLANE1232
+      name: VIEW_LETZTES_VIEW
       overrideSQL: false
       schema: ""
       sqlType: View
