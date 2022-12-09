@@ -67,7 +67,9 @@ steps:
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - customSQL:
+          - aliases:
+              SOURCE_L_AIRPORT: "298"
+            customSQL:
               customSQL: ""
             dependencies:
               - locationName: SRC
