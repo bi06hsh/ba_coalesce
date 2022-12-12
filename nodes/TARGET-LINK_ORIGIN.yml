@@ -1,5 +1,5 @@
 steps:
-  LINK_ORIGIN-321:
+  LINK_ORIGIN-347:
     operation:
       config:
         insertStrategy: UNION
@@ -18,8 +18,8 @@ steps:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 74611
-              stepCounter: "321"
+              columnCounter: 76928
+              stepCounter: "347"
             config:
               isLinkHash: true
             dataType: STRING
@@ -30,12 +30,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74472
-                    stepCounter: "319"
+                  - columnCounter: 76261
+                    stepCounter: "342"
                 transform: ""
           - columnReference:
-              columnCounter: 74612
-              stepCounter: "321"
+              columnCounter: 76930
+              stepCounter: "347"
             dataType: STRING
             description: ""
             hashColumns: []
@@ -44,12 +44,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74474
-                    stepCounter: "319"
+                  - columnCounter: 76263
+                    stepCounter: "342"
                 transform: ""
           - columnReference:
-              columnCounter: 74607
-              stepCounter: "321"
+              columnCounter: 76924
+              stepCounter: "347"
             dataType: STRING
             description: ""
             hashColumns: []
@@ -58,16 +58,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74466
-                    stepCounter: "319"
+                  - columnCounter: 76255
+                    stepCounter: "342"
                 transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 74614
-              stepCounter: "321"
+              columnCounter: 76931
+              stepCounter: "347"
             config: {}
             dataType: TIMESTAMP
             defaultValue: ""
@@ -84,8 +84,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 74615
-              stepCounter: "321"
+              columnCounter: 76932
+              stepCounter: "347"
             config: {}
             dataType: VARCHAR
             defaultValue: ""
@@ -114,4 +114,4 @@ steps:
       schema: ""
       sqlType: COALESCE-DATA_VAULT::2
       type: sql
-    stepCounter: "321"
+    stepCounter: "347"

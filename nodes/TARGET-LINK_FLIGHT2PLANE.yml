@@ -1,5 +1,5 @@
 steps:
-  LINK_FLIGHT2PLANE-109:
+  LINK_FLIGHT2PLANE-344:
     operation:
       config:
         insertStrategy: UNION
@@ -18,8 +18,8 @@ steps:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 7734
-              stepCounter: "109"
+              columnCounter: 76521
+              stepCounter: "344"
             config:
               isLinkHash: true
             dataType: STRING
@@ -30,12 +30,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74468
-                    stepCounter: "319"
+                  - columnCounter: 76257
+                    stepCounter: "342"
                 transform: ""
           - columnReference:
-              columnCounter: 7735
-              stepCounter: "109"
+              columnCounter: 76522
+              stepCounter: "344"
             dataType: STRING
             description: ""
             hashColumns: []
@@ -44,12 +44,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74466
-                    stepCounter: "319"
+                  - columnCounter: 76255
+                    stepCounter: "342"
                 transform: ""
           - columnReference:
-              columnCounter: 7736
-              stepCounter: "109"
+              columnCounter: 76523
+              stepCounter: "344"
             dataType: STRING
             description: ""
             hashColumns: []
@@ -58,16 +58,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74467
-                    stepCounter: "319"
+                  - columnCounter: 76256
+                    stepCounter: "342"
                 transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 7743
-              stepCounter: "109"
+              columnCounter: 76528
+              stepCounter: "344"
             config: {}
             dataType: TIMESTAMP
             defaultValue: ""
@@ -79,13 +79,19 @@ steps:
             sourceColumnReferences:
               - columnReferences: []
                 transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
-          - columnReference:
-              columnCounter: 7733
-              stepCounter: "109"
-            dataType: VARCHAR(50)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 76529
+              stepCounter: "344"
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
             description: ""
             hashColumns: []
-            hashDetails: null
+            isSystemRecordSource: true
             name: RECORD_SOURCE
             nullable: true
             sourceColumnReferences:
@@ -94,9 +100,7 @@ steps:
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - aliases:
-              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_LINK: "319"
-            customSQL:
+          - customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
@@ -110,4 +114,4 @@ steps:
       schema: ""
       sqlType: COALESCE-DATA_VAULT::2
       type: sql
-    stepCounter: "109"
+    stepCounter: "344"

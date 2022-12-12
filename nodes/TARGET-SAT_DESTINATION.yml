@@ -1,5 +1,5 @@
 steps:
-  SAT_DESTINATION-244:
+  SAT_DESTINATION-355:
     operation:
       config:
         postSQL: ""
@@ -17,8 +17,8 @@ steps:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 34722
-              stepCounter: "244"
+              columnCounter: 78262
+              stepCounter: "355"
             config:
               isHubHash: true
             dataType: STRING
@@ -27,16 +27,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74880
-                    stepCounter: "323"
+                  - columnCounter: 77317
+                    stepCounter: "350"
                 transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 34726
-              stepCounter: "244"
+              columnCounter: 78266
+              stepCounter: "355"
             config:
               isChangeHash: true
             dataType: STRING
@@ -45,130 +45,130 @@ steps:
             hashDetails:
               hashAlgorithm: MD5
             hashedColumns:
-              - columnCounter: 34628
-                stepCounter: "244"
-              - columnCounter: 34622
-                stepCounter: "244"
-              - columnCounter: 34623
-                stepCounter: "244"
-              - columnCounter: 34624
-                stepCounter: "244"
-              - columnCounter: 34627
-                stepCounter: "244"
-              - columnCounter: 34629
-                stepCounter: "244"
-              - columnCounter: 34630
-                stepCounter: "244"
-              - columnCounter: 34631
-                stepCounter: "244"
+              - columnCounter: 78169
+                stepCounter: "355"
+              - columnCounter: 78163
+                stepCounter: "355"
+              - columnCounter: 78164
+                stepCounter: "355"
+              - columnCounter: 78165
+                stepCounter: "355"
+              - columnCounter: 78168
+                stepCounter: "355"
+              - columnCounter: 78170
+                stepCounter: "355"
+              - columnCounter: 78171
+                stepCounter: "355"
+              - columnCounter: 78172
+                stepCounter: "355"
             name: HASHDIFF
             nullable: true
             sourceColumnReferences:
               - columnReferences: []
                 transform: ""
           - columnReference:
-              columnCounter: 34628
-              stepCounter: "244"
+              columnCounter: 78169
+              stepCounter: "355"
             dataType: VARCHAR(10)
             description: ""
             name: DESTSTATE
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74784
-                    stepCounter: "323"
+                  - columnCounter: 77224
+                    stepCounter: "350"
                 transform: ""
           - columnReference:
-              columnCounter: 34622
-              stepCounter: "244"
+              columnCounter: 78163
+              stepCounter: "355"
             dataType: VARCHAR(5)
             description: ""
             name: DESTAIRPORTID
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74779
-                    stepCounter: "323"
+                  - columnCounter: 77218
+                    stepCounter: "350"
                 transform: ""
           - columnReference:
-              columnCounter: 34623
-              stepCounter: "244"
+              columnCounter: 78164
+              stepCounter: "355"
             dataType: VARCHAR(7)
             description: ""
             name: DESTAIRPORTSEQID
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74780
-                    stepCounter: "323"
+                  - columnCounter: 77219
+                    stepCounter: "350"
                 transform: ""
           - columnReference:
-              columnCounter: 34624
-              stepCounter: "244"
+              columnCounter: 78165
+              stepCounter: "355"
             dataType: VARCHAR(5)
             description: ""
             name: DESTCITYMARKETID
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74781
-                    stepCounter: "323"
+                  - columnCounter: 77220
+                    stepCounter: "350"
                 transform: ""
           - columnReference:
-              columnCounter: 34627
-              stepCounter: "244"
+              columnCounter: 78168
+              stepCounter: "355"
             dataType: VARCHAR(40)
             description: ""
             name: DESTCITYNAME
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74783
-                    stepCounter: "323"
+                  - columnCounter: 77223
+                    stepCounter: "350"
                 transform: ""
           - columnReference:
-              columnCounter: 34629
-              stepCounter: "244"
+              columnCounter: 78170
+              stepCounter: "355"
             dataType: VARCHAR(10)
             description: ""
             name: DESTSTATEFIPS
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74785
-                    stepCounter: "323"
+                  - columnCounter: 77225
+                    stepCounter: "350"
                 transform: ""
           - columnReference:
-              columnCounter: 34630
-              stepCounter: "244"
+              columnCounter: 78171
+              stepCounter: "355"
             dataType: VARCHAR(50)
             description: ""
             name: DESTSTATENAME
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74786
-                    stepCounter: "323"
+                  - columnCounter: 77226
+                    stepCounter: "350"
                 transform: ""
           - columnReference:
-              columnCounter: 34631
-              stepCounter: "244"
+              columnCounter: 78172
+              stepCounter: "355"
             dataType: VARCHAR(10)
             description: ""
             name: DESTWAC
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74787
-                    stepCounter: "323"
+                  - columnCounter: 77227
+                    stepCounter: "350"
                 transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 34724
-              stepCounter: "244"
+              columnCounter: 78264
+              stepCounter: "355"
             config: {}
             dataType: TIMESTAMP
             defaultValue: ""
@@ -184,8 +184,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 34725
-              stepCounter: "244"
+              columnCounter: 78265
+              stepCounter: "355"
             config: {}
             dataType: VARCHAR
             defaultValue: ""
@@ -199,15 +199,13 @@ steps:
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - aliases:
-              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES: "323"
-            customSQL:
+          - customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
-                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT
             join:
-              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES"
+              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT"
             name: SAT_DESTINATION
             noLinkRefs: []
       name: SAT_DESTINATION
@@ -215,4 +213,4 @@ steps:
       schema: ""
       sqlType: COALESCE-DATA_VAULT::3
       type: sql
-    stepCounter: "244"
+    stepCounter: "355"

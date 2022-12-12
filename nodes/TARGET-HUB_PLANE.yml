@@ -1,5 +1,5 @@
 steps:
-  HUB_PLANE-105:
+  HUB_PLANE-338:
     operation:
       config:
         postSQL: ""
@@ -16,31 +16,25 @@ steps:
       metadata:
         appliedNodeTests: []
         columns:
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 7330
-              stepCounter: "105"
+          - columnReference:
+              columnCounter: 75758
+              stepCounter: "338"
             config:
               isHubHash: true
             dataType: STRING
-            defaultValue: ""
             description: ""
-            keyColumnType: None
+            hashColumns: []
+            hashDetails: null
             name: PLANE_HK
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74341
-                    stepCounter: "318"
+                  - columnCounter: 75637
+                    stepCounter: "337"
                 transform: ""
-            systemColumnType: None
-            transform: ""
           - columnReference:
-              columnCounter: 7214
-              stepCounter: "105"
+              columnCounter: 75656
+              stepCounter: "338"
             dataType: VARCHAR(6)
             description: ""
             hashColumns: []
@@ -49,16 +43,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74239
-                    stepCounter: "318"
+                  - columnCounter: 75535
+                    stepCounter: "337"
                 transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 7328
-              stepCounter: "105"
+              columnCounter: 75759
+              stepCounter: "338"
             config: {}
             dataType: TIMESTAMP
             defaultValue: ""
@@ -75,8 +69,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 7329
-              stepCounter: "105"
+              columnCounter: 75760
+              stepCounter: "338"
             config: {}
             dataType: VARCHAR
             defaultValue: ""
@@ -91,9 +85,7 @@ steps:
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - aliases:
-              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB: "318"
-            customSQL:
+          - customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
@@ -107,4 +99,4 @@ steps:
       schema: ""
       sqlType: COALESCE-DATA_VAULT::1
       type: sql
-    stepCounter: "105"
+    stepCounter: "338"

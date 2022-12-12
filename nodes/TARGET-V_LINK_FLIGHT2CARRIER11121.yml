@@ -1,0 +1,106 @@
+steps:
+  V_LINK_FLIGHT2CARRIER11121-6643:
+    operation:
+      config:
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: TARGET
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 163155
+              stepCounter: "6643"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FLIGHT2CARRIER_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159625
+                    stepCounter: "6275"
+                transform: ""
+          - columnReference:
+              columnCounter: 163156
+              stepCounter: "6643"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FLIGHT_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159626
+                    stepCounter: "6275"
+                transform: ""
+          - columnReference:
+              columnCounter: 163157
+              stepCounter: "6643"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CARRIER_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159627
+                    stepCounter: "6275"
+                transform: ""
+          - columnReference:
+              columnCounter: 163158
+              stepCounter: "6643"
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159628
+                    stepCounter: "6275"
+                transform: ""
+          - columnReference:
+              columnCounter: 163159
+              stepCounter: "6643"
+            dataType: VARCHAR
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 159629
+                    stepCounter: "6275"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: V_LINK_FLIGHT2CARRIER1112
+            join:
+              joinCondition: FROM {{ ref('TARGET', 'V_LINK_FLIGHT2CARRIER1112') }} "V_LINK_FLIGHT2CARRIER1112"
+            name: V_LINK_FLIGHT2CARRIER11121
+            noLinkRefs: []
+      name: V_LINK_FLIGHT2CARRIER11121
+      overrideSQL: false
+      schema: ""
+      sqlType: View
+      type: sql
+    stepCounter: "6643"

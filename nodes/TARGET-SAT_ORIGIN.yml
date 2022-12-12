@@ -1,5 +1,5 @@
 steps:
-  SAT_ORIGIN-243:
+  SAT_ORIGIN-353:
     operation:
       config:
         postSQL: ""
@@ -17,8 +17,8 @@ steps:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 34586
-              stepCounter: "243"
+              columnCounter: 77994
+              stepCounter: "353"
             config:
               isHubHash: true
             dataType: STRING
@@ -27,16 +27,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74881
-                    stepCounter: "323"
+                  - columnCounter: 77318
+                    stepCounter: "350"
                 transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 34590
-              stepCounter: "243"
+              columnCounter: 77997
+              stepCounter: "353"
             config:
               isChangeHash: true
             dataType: STRING
@@ -45,130 +45,130 @@ steps:
             hashDetails:
               hashAlgorithm: MD5
             hashedColumns:
-              - columnCounter: 34481
-                stepCounter: "243"
-              - columnCounter: 34475
-                stepCounter: "243"
-              - columnCounter: 34476
-                stepCounter: "243"
-              - columnCounter: 34477
-                stepCounter: "243"
-              - columnCounter: 34480
-                stepCounter: "243"
-              - columnCounter: 34482
-                stepCounter: "243"
-              - columnCounter: 34483
-                stepCounter: "243"
-              - columnCounter: 34484
-                stepCounter: "243"
+              - columnCounter: 77890
+                stepCounter: "353"
+              - columnCounter: 77884
+                stepCounter: "353"
+              - columnCounter: 77885
+                stepCounter: "353"
+              - columnCounter: 77886
+                stepCounter: "353"
+              - columnCounter: 77889
+                stepCounter: "353"
+              - columnCounter: 77891
+                stepCounter: "353"
+              - columnCounter: 77892
+                stepCounter: "353"
+              - columnCounter: 77893
+                stepCounter: "353"
             name: HASHDIFF
             nullable: true
             sourceColumnReferences:
               - columnReferences: []
                 transform: ""
           - columnReference:
-              columnCounter: 34481
-              stepCounter: "243"
+              columnCounter: 77890
+              stepCounter: "353"
             dataType: VARCHAR(10)
             description: ""
             name: ORIGINSTATE
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74775
-                    stepCounter: "323"
+                  - columnCounter: 77214
+                    stepCounter: "350"
                 transform: ""
           - columnReference:
-              columnCounter: 34475
-              stepCounter: "243"
+              columnCounter: 77884
+              stepCounter: "353"
             dataType: VARCHAR(5)
             description: ""
             name: ORIGINAIRPORTID
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74770
-                    stepCounter: "323"
+                  - columnCounter: 77208
+                    stepCounter: "350"
                 transform: ""
           - columnReference:
-              columnCounter: 34476
-              stepCounter: "243"
+              columnCounter: 77885
+              stepCounter: "353"
             dataType: VARCHAR(7)
             description: ""
             name: ORIGINAIRPORTSEQID
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74771
-                    stepCounter: "323"
+                  - columnCounter: 77209
+                    stepCounter: "350"
                 transform: ""
           - columnReference:
-              columnCounter: 34477
-              stepCounter: "243"
+              columnCounter: 77886
+              stepCounter: "353"
             dataType: VARCHAR(5)
             description: ""
             name: ORIGINCITYMARKETID
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74772
-                    stepCounter: "323"
+                  - columnCounter: 77210
+                    stepCounter: "350"
                 transform: ""
           - columnReference:
-              columnCounter: 34480
-              stepCounter: "243"
+              columnCounter: 77889
+              stepCounter: "353"
             dataType: VARCHAR(40)
             description: ""
             name: ORIGINCITYNAME
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74774
-                    stepCounter: "323"
+                  - columnCounter: 77213
+                    stepCounter: "350"
                 transform: ""
           - columnReference:
-              columnCounter: 34482
-              stepCounter: "243"
+              columnCounter: 77891
+              stepCounter: "353"
             dataType: VARCHAR(10)
             description: ""
             name: ORIGINSTATEFIPS
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74776
-                    stepCounter: "323"
+                  - columnCounter: 77215
+                    stepCounter: "350"
                 transform: ""
           - columnReference:
-              columnCounter: 34483
-              stepCounter: "243"
+              columnCounter: 77892
+              stepCounter: "353"
             dataType: VARCHAR(50)
             description: ""
             name: ORIGINSTATENAME
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74777
-                    stepCounter: "323"
+                  - columnCounter: 77216
+                    stepCounter: "350"
                 transform: ""
           - columnReference:
-              columnCounter: 34484
-              stepCounter: "243"
+              columnCounter: 77893
+              stepCounter: "353"
             dataType: VARCHAR(10)
             description: ""
             name: ORIGINWAC
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74778
-                    stepCounter: "323"
+                  - columnCounter: 77217
+                    stepCounter: "350"
                 transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 34587
-              stepCounter: "243"
+              columnCounter: 77995
+              stepCounter: "353"
             config: {}
             dataType: TIMESTAMP
             defaultValue: ""
@@ -184,8 +184,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 34588
-              stepCounter: "243"
+              columnCounter: 77996
+              stepCounter: "353"
             config: {}
             dataType: VARCHAR
             defaultValue: ""
@@ -199,15 +199,13 @@ steps:
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - aliases:
-              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES: "323"
-            customSQL:
+          - customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
-                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT
             join:
-              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SATELLITES"
+              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT"
             name: SAT_ORIGIN
             noLinkRefs: []
       name: SAT_ORIGIN
@@ -215,4 +213,4 @@ steps:
       schema: ""
       sqlType: COALESCE-DATA_VAULT::3
       type: sql
-    stepCounter: "243"
+    stepCounter: "353"

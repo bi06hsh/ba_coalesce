@@ -1,5 +1,5 @@
 steps:
-  HUB_FLIGHT-106:
+  HUB_FLIGHT-341:
     operation:
       config:
         postSQL: ""
@@ -17,8 +17,8 @@ steps:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 7457
-              stepCounter: "106"
+              columnCounter: 76129
+              stepCounter: "341"
             config:
               isHubHash: true
             dataType: STRING
@@ -29,12 +29,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74342
-                    stepCounter: "318"
+                  - columnCounter: 76007
+                    stepCounter: "337"
                 transform: ""
           - columnReference:
-              columnCounter: 7337
-              stepCounter: "106"
+              columnCounter: 76013
+              stepCounter: "341"
             dataType: DATE
             description: ""
             hashColumns: []
@@ -43,12 +43,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74226
-                    stepCounter: "318"
+                  - columnCounter: 75522
+                    stepCounter: "337"
                 transform: ""
           - columnReference:
-              columnCounter: 7341
-              stepCounter: "106"
+              columnCounter: 76017
+              stepCounter: "341"
             dataType: VARCHAR(10)
             description: ""
             hashColumns: []
@@ -57,12 +57,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74230
-                    stepCounter: "318"
+                  - columnCounter: 75526
+                    stepCounter: "337"
                 transform: ""
           - columnReference:
-              columnCounter: 7342
-              stepCounter: "106"
+              columnCounter: 76018
+              stepCounter: "341"
             dataType: VARCHAR(4)
             description: ""
             hashColumns: []
@@ -71,12 +71,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74231
-                    stepCounter: "318"
+                  - columnCounter: 75527
+                    stepCounter: "337"
                 transform: ""
           - columnReference:
-              columnCounter: 7356
-              stepCounter: "106"
+              columnCounter: 76031
+              stepCounter: "341"
             dataType: VARCHAR(3)
             description: ""
             hashColumns: []
@@ -85,12 +85,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74244
-                    stepCounter: "318"
+                  - columnCounter: 75540
+                    stepCounter: "337"
                 transform: ""
           - columnReference:
-              columnCounter: 7366
-              stepCounter: "106"
+              columnCounter: 76040
+              stepCounter: "341"
             dataType: VARCHAR(3)
             description: ""
             hashColumns: []
@@ -99,16 +99,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 74253
-                    stepCounter: "318"
+                  - columnCounter: 75549
+                    stepCounter: "337"
                 transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 7465
-              stepCounter: "106"
+              columnCounter: 76130
+              stepCounter: "341"
             config: {}
             dataType: TIMESTAMP
             defaultValue: ""
@@ -120,24 +120,28 @@ steps:
             sourceColumnReferences:
               - columnReferences: []
                 transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
-          - columnReference:
-              columnCounter: 7455
-              stepCounter: "106"
-            dataType: VARCHAR(50)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 76131
+              stepCounter: "341"
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
             description: ""
             hashColumns: []
-            hashDetails: null
+            isSystemRecordSource: true
             name: RECORD_SOURCE
             nullable: true
             sourceColumnReferences:
               - columnReferences: []
-                transform: ""
+                transform: "'SOURCE_ON_TIME_FLIGHT_PERFORMANCE'"
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - aliases:
-              STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_HUB: "318"
-            customSQL:
+          - customSQL:
               customSQL: ""
             dependencies:
               - locationName: TARGET
@@ -151,4 +155,4 @@ steps:
       schema: ""
       sqlType: COALESCE-DATA_VAULT::1
       type: sql
-    stepCounter: "106"
+    stepCounter: "341"
