@@ -1,0 +1,117 @@
+steps:
+  LINK_FLIGHT2CARRIER-346:
+    operation:
+      config:
+        insertStrategy: UNION
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: TARGET
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 76788
+              stepCounter: "346"
+            config:
+              isLinkHash: true
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FLIGHT2CARRIER_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 76252
+                    stepCounter: "342"
+                transform: ""
+          - columnReference:
+              columnCounter: 76790
+              stepCounter: "346"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FLIGHT_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 76255
+                    stepCounter: "342"
+                transform: ""
+          - columnReference:
+              columnCounter: 76792
+              stepCounter: "346"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CARRIER_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 76663
+                    stepCounter: "342"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 76797
+              stepCounter: "346"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 76798
+              stepCounter: "346"
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemRecordSource: true
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SOURCE_ON_TIME_FLIGHT_PERFORMANCE'"
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_LINK
+            join:
+              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_LINK') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_LINK"
+            name: LINK_FLIGHT2CARRIER
+            noLinkRefs: []
+      name: LINK_FLIGHT2CARRIER
+      overrideSQL: false
+      schema: ""
+      sqlType: COALESCE-DATA_VAULT::2
+      type: sql
+    stepCounter: "346"

@@ -1,0 +1,106 @@
+steps:
+  V_PLANE1121111-6748:
+    operation:
+      config:
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: TARGET
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 163918
+              stepCounter: "6748"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PLANE_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 160388
+                    stepCounter: "6380"
+                transform: ""
+          - columnReference:
+              columnCounter: 163919
+              stepCounter: "6748"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HASHDIFF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 160389
+                    stepCounter: "6380"
+                transform: ""
+          - columnReference:
+              columnCounter: 163920
+              stepCounter: "6748"
+            dataType: VARCHAR(6)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TAIL_NUMBER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 160390
+                    stepCounter: "6380"
+                transform: ""
+          - columnReference:
+              columnCounter: 163921
+              stepCounter: "6748"
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 160391
+                    stepCounter: "6380"
+                transform: ""
+          - columnReference:
+              columnCounter: 163922
+              stepCounter: "6748"
+            dataType: VARCHAR
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 160392
+                    stepCounter: "6380"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: V_PLANE112111
+            join:
+              joinCondition: FROM {{ ref('TARGET', 'V_PLANE112111') }} "V_PLANE112111"
+            name: V_PLANE1121111
+            noLinkRefs: []
+      name: V_PLANE1121111
+      overrideSQL: false
+      schema: ""
+      sqlType: View
+      type: sql
+    stepCounter: "6748"

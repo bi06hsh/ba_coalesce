@@ -1,0 +1,216 @@
+steps:
+  SAT_ORIGIN1-5994:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: TARGET
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 154936
+              stepCounter: "5994"
+            config:
+              isHubHash: true
+            dataType: STRING
+            description: ""
+            name: AIRPORT_ORIGIN_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 77318
+                    stepCounter: "350"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 154937
+              stepCounter: "5994"
+            config:
+              isChangeHash: true
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 154938
+                stepCounter: "5994"
+              - columnCounter: 154939
+                stepCounter: "5994"
+              - columnCounter: 154940
+                stepCounter: "5994"
+              - columnCounter: 154941
+                stepCounter: "5994"
+              - columnCounter: 154942
+                stepCounter: "5994"
+              - columnCounter: 154943
+                stepCounter: "5994"
+              - columnCounter: 154944
+                stepCounter: "5994"
+              - columnCounter: 154945
+                stepCounter: "5994"
+            name: HASHDIFF
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 154938
+              stepCounter: "5994"
+            dataType: VARCHAR(10)
+            description: ""
+            name: ORIGINSTATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 77214
+                    stepCounter: "350"
+                transform: ""
+          - columnReference:
+              columnCounter: 154939
+              stepCounter: "5994"
+            dataType: VARCHAR(5)
+            description: ""
+            name: ORIGINAIRPORTID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 77208
+                    stepCounter: "350"
+                transform: ""
+          - columnReference:
+              columnCounter: 154940
+              stepCounter: "5994"
+            dataType: VARCHAR(7)
+            description: ""
+            name: ORIGINAIRPORTSEQID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 77209
+                    stepCounter: "350"
+                transform: ""
+          - columnReference:
+              columnCounter: 154941
+              stepCounter: "5994"
+            dataType: VARCHAR(5)
+            description: ""
+            name: ORIGINCITYMARKETID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 77210
+                    stepCounter: "350"
+                transform: ""
+          - columnReference:
+              columnCounter: 154942
+              stepCounter: "5994"
+            dataType: VARCHAR(40)
+            description: ""
+            name: ORIGINCITYNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 77213
+                    stepCounter: "350"
+                transform: ""
+          - columnReference:
+              columnCounter: 154943
+              stepCounter: "5994"
+            dataType: VARCHAR(10)
+            description: ""
+            name: ORIGINSTATEFIPS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 77215
+                    stepCounter: "350"
+                transform: ""
+          - columnReference:
+              columnCounter: 154944
+              stepCounter: "5994"
+            dataType: VARCHAR(50)
+            description: ""
+            name: ORIGINSTATENAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 77216
+                    stepCounter: "350"
+                transform: ""
+          - columnReference:
+              columnCounter: 154945
+              stepCounter: "5994"
+            dataType: VARCHAR(10)
+            description: ""
+            name: ORIGINWAC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 77217
+                    stepCounter: "350"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 154946
+              stepCounter: "5994"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            isSystemCreateDate: true
+            name: LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 154947
+              stepCounter: "5994"
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            isSystemRecordSource: true
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SOURCE_ON_TIME_FLIGHT_PERFORMANCE'"
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT
+            join:
+              joinCondition: FROM {{ ref('TARGET', 'STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT') }} "STG_SOURCE_ON_TIME_FLIGHT_PERFORMANCE_SAT"
+            name: SAT_ORIGIN
+            noLinkRefs: []
+      name: SAT_ORIGIN1
+      overrideSQL: false
+      schema: ""
+      sqlType: COALESCE-DATA_VAULT::3
+      type: sql
+    stepCounter: "5994"

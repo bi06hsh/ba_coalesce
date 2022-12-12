@@ -1,0 +1,106 @@
+steps:
+  V_LINK_DESTINATION4-6119:
+    operation:
+      config:
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: TARGET
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 158475
+              stepCounter: "6119"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LINK_DESTINATION_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 156961
+                    stepCounter: "6027"
+                transform: ""
+          - columnReference:
+              columnCounter: 158476
+              stepCounter: "6119"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AIRPORT_DESTINATION_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 156962
+                    stepCounter: "6027"
+                transform: ""
+          - columnReference:
+              columnCounter: 158477
+              stepCounter: "6119"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FLIGHT_HK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 156963
+                    stepCounter: "6027"
+                transform: ""
+          - columnReference:
+              columnCounter: 158478
+              stepCounter: "6119"
+            dataType: TIMESTAMP
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOAD_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 156964
+                    stepCounter: "6027"
+                transform: ""
+          - columnReference:
+              columnCounter: 158479
+              stepCounter: "6119"
+            dataType: VARCHAR
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECORD_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 156965
+                    stepCounter: "6027"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: V_LINK_DESTINATION
+            join:
+              joinCondition: FROM {{ ref('TARGET', 'V_LINK_DESTINATION') }} "V_LINK_DESTINATION"
+            name: V_LINK_DESTINATION4
+            noLinkRefs: []
+      name: V_LINK_DESTINATION4
+      overrideSQL: false
+      schema: ""
+      sqlType: View
+      type: sql
+    stepCounter: "6119"
