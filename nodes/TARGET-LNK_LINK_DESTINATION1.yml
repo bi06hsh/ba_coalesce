@@ -1,5 +1,5 @@
 steps:
-  LNK_LINK_DESTINATION1-6011:
+  LNK_LINK_DESTINATION1-6001:
     operation:
       config:
         insertStrategy: UNION
@@ -18,8 +18,8 @@ steps:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 155569
-              stepCounter: "6011"
+              columnCounter: 155493
+              stepCounter: "6001"
             config:
               isLinkHash: true
             dataType: STRING
@@ -34,8 +34,8 @@ steps:
                     stepCounter: "342"
                 transform: ""
           - columnReference:
-              columnCounter: 155570
-              stepCounter: "6011"
+              columnCounter: 155494
+              stepCounter: "6001"
             dataType: STRING
             description: ""
             hashColumns: []
@@ -48,8 +48,8 @@ steps:
                     stepCounter: "342"
                 transform: ""
           - columnReference:
-              columnCounter: 155571
-              stepCounter: "6011"
+              columnCounter: 155495
+              stepCounter: "6001"
             dataType: STRING
             description: ""
             hashColumns: []
@@ -66,8 +66,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 155572
-              stepCounter: "6011"
+              columnCounter: 155496
+              stepCounter: "6001"
             config: {}
             dataType: TIMESTAMP
             defaultValue: ""
@@ -84,8 +84,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 155573
-              stepCounter: "6011"
+              columnCounter: 155497
+              stepCounter: "6001"
             config: {}
             dataType: VARCHAR
             defaultValue: ""
@@ -114,4 +114,4 @@ steps:
       schema: ""
       sqlType: COALESCE-DATA_VAULT::2
       type: sql
-    stepCounter: "6011"
+    stepCounter: "6001"
