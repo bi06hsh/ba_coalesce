@@ -10,7 +10,7 @@ locations:
     mappingDefinitions:
       "14":
         database: DEV_GLUNDE
-        schema: COALESCE_BA
+        schema: COALESCE_BA_INKREMENTELL_MERGE
 macros: {}
 packages:
   COALESCE-DATA_VAULT:
